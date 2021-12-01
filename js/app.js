@@ -28,7 +28,7 @@ while(tipoDeCuenta !== "ESC"){
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
         } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra opracion. Hasta la proxima!`);
+            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
             break;
         }
     } else if (tipoDeCuenta === 2) {
@@ -51,7 +51,7 @@ while(tipoDeCuenta !== "ESC"){
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
         } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra opracion. Hasta la proxima!`);
+            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
             break;
         }
     } else if (tipoDeCuenta === 3) {
@@ -73,7 +73,7 @@ while(tipoDeCuenta !== "ESC"){
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
         } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra opracion. Hasta la proxima!`);
+            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
             break;
         }
     } else if (tipoDeCuenta === 4) {
@@ -95,7 +95,7 @@ while(tipoDeCuenta !== "ESC"){
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
         } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra opracion. Hasta la proxima!`);
+            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
             break;
         }
     } else {
@@ -105,7 +105,7 @@ while(tipoDeCuenta !== "ESC"){
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
         } else {
-            alert(`Entiendo ${nombre} que no quieres realizar una opracion. Hasta la proxima!`);
+            alert(`Entiendo ${nombre} que no quieres realizar una operacion. Hasta la proxima!`);
             break;
         }
     }
