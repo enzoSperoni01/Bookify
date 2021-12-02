@@ -1,6 +1,6 @@
 // Pedir nombre
-let nombre = prompt("Hola usuario, soy JavaScript! ¿Cual es tu nombre?");
-let apellido = prompt("Ahora dime, ¿Cual es tu apellido?");
+const nombre = prompt("Hola usuario, soy JavaScript! ¿Cual es tu nombre?");
+const apellido = prompt("Ahora dime, ¿Cual es tu apellido?");
 alert(`Muy bien ${nombre} ${apellido}, ahora haremos una cuenta!`);
 
 let tipoDeCuenta;
@@ -11,9 +11,10 @@ while(tipoDeCuenta !== "ESC"){
     if (tipoDeCuenta === 1) {
         // Sumar números
         alert("ATENCIÓN!\nEstas por hacer una suma.");
+        let suma = (num1, num2) => num1 + num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = parseInt(num1 + num2);
+        let resultado = suma(num1, num2);
         alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
         alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
         if (resultado < 50){
@@ -34,9 +35,10 @@ while(tipoDeCuenta !== "ESC"){
     } else if (tipoDeCuenta === 2) {
         // Restar números
         alert("ATENCIÓN!\nEstas por hacer una resta.");
+        let resta = (num1, num2) => num1 - num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = parseInt(num1 - num2);
+        let resultado = resta(num1, num2);
         alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
         alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
         if (resultado < 50){
@@ -57,9 +59,10 @@ while(tipoDeCuenta !== "ESC"){
     } else if (tipoDeCuenta === 3) {
         // Multiplicar números
         alert("ATENCIÓN!\nEstas por hacer una multiplicación.");
+        let multiplicación = (num1, num2) => num1 * num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = parseInt(num1 * num2);
+        let resultado = multiplicación(num1, num2);
         alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
         alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
         if (resultado < 50){
@@ -79,9 +82,10 @@ while(tipoDeCuenta !== "ESC"){
     } else if (tipoDeCuenta === 4) {
         // Division números
         alert("ATENCIÓN!\nEstas por hacer una división.");
+        let division = (num1, num2) => num1 / num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = parseInt(num1 / num2);
+        let resultado = division(num1, num2);
         alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
         alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
         if (resultado < 50){
