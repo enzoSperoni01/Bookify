@@ -16,14 +16,14 @@ while(tipoDeCuenta !== "ESC"){
         let num2 = parseInt(prompt("Escribe otro número:"));
         let resultado = suma(num1, num2);
         alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
-        alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
         if (resultado < 50){
+            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
             while(resultado < 50) {
                 resultado++;
                 console.log(`Ciclo hasta el ${resultado}/50`);
             }
         } else {
-            console.log(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo`);
+            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
         }
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
@@ -39,15 +39,15 @@ while(tipoDeCuenta !== "ESC"){
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
         let resultado = resta(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
-        alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
+        alert(`Hey ${nombre}, el resultado de tu resta es: ${resultado}`);
         if (resultado < 50){
+            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
             while(resultado < 50) {
                 resultado++;
                 console.log(`Ciclo hasta el ${resultado}/50`);
             }
         } else {
-            console.log(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo`);
+            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
         }
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
@@ -63,14 +63,14 @@ while(tipoDeCuenta !== "ESC"){
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
         let resultado = multiplicación(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
-        alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
+        alert(`Hey ${nombre}, el resultado de tu multiplicacion es: ${resultado}`);
         if (resultado < 50){
+            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
             for(resultado; resultado <= 50; resultado++) {
                 console.log(`Ciclo hasta el ${resultado}/50`);
             }
         } else {
-            console.log(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo`);
+            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
         }
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
@@ -86,14 +86,14 @@ while(tipoDeCuenta !== "ESC"){
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
         let resultado = division(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
-        alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
+        alert(`Hey ${nombre}, el resultado de tu division es: ${resultado}`);
         if (resultado < 50){
+            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
             for(resultado; resultado <= 50; resultado++) {
                 console.log(`Ciclo hasta el ${resultado}/50`);
             }
         } else {
-            console.log(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo`);
+            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
         }
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
@@ -104,13 +104,10 @@ while(tipoDeCuenta !== "ESC"){
         }
     } else {
         // Respuesta por 'Default'
-        alert(`Disculpa ${nombre}, no conozco ese comando.\nApreta enter para que se ejecute de nuevo el programa!`);
-        let peticion = prompt("Quieres hacer una operacion?");
-        if(peticion === "Si" || peticion === "si" || peticion === "SI") {
+        let reiniciar = function() {
+            alert(`Disculpa ${nombre}, no conozco ese comando.\nApreta enter para que se ejecute de nuevo el programa!`);
             tipoDeCuenta;
-        } else {
-            alert(`Entiendo ${nombre} que no quieres realizar una operacion. Hasta la proxima!`);
-            break;
         }
+        reiniciar();
     }
 }
