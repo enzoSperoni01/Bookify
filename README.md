@@ -3,7 +3,7 @@
 
 ---
 
-El proyecto que estoy realizando es para la entrega de ***Proyecto Final*** en la escuela de educacion online de **Coderhohuse** <br><br>
+El proyecto que estoy realizando es para la entrega de ***Proyecto Final*** en la escuela<br> de educacion online de **Coderhohuse** <br><br>
 Por ahora, es una calculadora normal con operaciones aritmeticas basicas,<br> conforme vaya avanzando en el curso, ire creando el resultado final del proyecto :man_technologist:
 
 <p align="center">
