@@ -1,3 +1,40 @@
+/* Declarando funciones */
+function reiniciar() {
+    alert(`Disculpa ${nombre}, no conozco ese comando.\nApreta enter para que se ejecute de nuevo el programa!`);
+    tipoDeCuenta;
+}
+let ciclo = function(resultado, cuenta) {
+    if (resultado < 50){
+        alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
+        while(resultado < 50) {
+            resultado++;
+            console.log(`${cuenta}: ciclo hasta el ${resultado}/50`);
+        }
+    } else {
+        alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
+    }
+}
+function suma(num1, num2) {
+    let resultado = num1 + num2;
+    alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
+    ciclo(resultado, "Suma");
+}
+function resta(num1, num2) {
+    let resultado = num1 - num2;
+    alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
+    ciclo(resultado, "Resta");
+}
+function multiplicacion(num1, num2) {
+    let resultado = num1 * num2;
+    alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
+    ciclo(resultado, "Multiplicación");
+}
+function division(num1, num2) {
+    let resultado = num1 / num2;
+    alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
+    ciclo(resultado, "División");
+}
+
 // Pedir nombre
 const nombre = prompt("Hola usuario, soy JavaScript! ¿Cual es tu nombre?");
 const apellido = prompt("Ahora dime, ¿Cual es tu apellido?");
@@ -11,20 +48,9 @@ while(tipoDeCuenta !== "ESC"){
     if (tipoDeCuenta === 1) {
         // Sumar números
         alert("ATENCIÓN!\nEstas por hacer una suma.");
-        let suma = (num1, num2) => num1 + num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = suma(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
-        if (resultado < 50){
-            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
-            while(resultado < 50) {
-                resultado++;
-                console.log(`Ciclo hasta el ${resultado}/50`);
-            }
-        } else {
-            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
-        }
+        suma(num1, num2);
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
@@ -35,20 +61,9 @@ while(tipoDeCuenta !== "ESC"){
     } else if (tipoDeCuenta === 2) {
         // Restar números
         alert("ATENCIÓN!\nEstas por hacer una resta.");
-        let resta = (num1, num2) => num1 - num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = resta(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu resta es: ${resultado}`);
-        if (resultado < 50){
-            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
-            while(resultado < 50) {
-                resultado++;
-                console.log(`Ciclo hasta el ${resultado}/50`);
-            }
-        } else {
-            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
-        }
+        resta(num1, num2);
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
@@ -59,19 +74,9 @@ while(tipoDeCuenta !== "ESC"){
     } else if (tipoDeCuenta === 3) {
         // Multiplicar números
         alert("ATENCIÓN!\nEstas por hacer una multiplicación.");
-        let multiplicación = (num1, num2) => num1 * num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = multiplicación(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu multiplicacion es: ${resultado}`);
-        if (resultado < 50){
-            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
-            for(resultado; resultado <= 50; resultado++) {
-                console.log(`Ciclo hasta el ${resultado}/50`);
-            }
-        } else {
-            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
-        }
+        multiplicacion(num1, num2);
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
@@ -82,19 +87,9 @@ while(tipoDeCuenta !== "ESC"){
     } else if (tipoDeCuenta === 4) {
         // Division números
         alert("ATENCIÓN!\nEstas por hacer una división.");
-        let division = (num1, num2) => num1 / num2;
         let num1 = parseInt(prompt("Escribe un número:"));
         let num2 = parseInt(prompt("Escribe otro número:"));
-        let resultado = division(num1, num2);
-        alert(`Hey ${nombre}, el resultado de tu division es: ${resultado}`);
-        if (resultado < 50){
-            alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
-            for(resultado; resultado <= 50; resultado++) {
-                console.log(`Ciclo hasta el ${resultado}/50`);
-            }
-        } else {
-            alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
-        }
+        division(num1, num2);
         let peticion = prompt("Quieres hacer otra operacion?");
         if(peticion === "Si" || peticion === "si" || peticion === "SI") {
             tipoDeCuenta;
@@ -104,10 +99,6 @@ while(tipoDeCuenta !== "ESC"){
         }
     } else {
         // Respuesta por 'Default'
-        let reiniciar = function() {
-            alert(`Disculpa ${nombre}, no conozco ese comando.\nApreta enter para que se ejecute de nuevo el programa!`);
-            tipoDeCuenta;
-        }
         reiniciar();
     }
 }
