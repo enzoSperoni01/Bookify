@@ -1,7 +1,20 @@
 /* Declarando funciones */
+let num1;
+let num2;
+let peticion;
 function reiniciar() {
     alert(`Disculpa ${nombre}, no conozco ese comando.\nApreta enter para que se ejecute de nuevo el programa!`);
     tipoDeCuenta;
+}
+function pregunta(){
+    peticion = prompt("Quieres hacer otra operacion?");
+    peticion = peticion.toLowerCase();
+    if(peticion === "si") {
+        tipoDeCuenta;
+    } else {
+        alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
+        tipoDeCuenta = "ESC";
+    }
 }
 let ciclo = function(resultado, cuenta) {
     if (resultado < 50){
@@ -13,6 +26,14 @@ let ciclo = function(resultado, cuenta) {
     } else {
         alert(`Tu resultado es: ${resultado} y es superior a 50\nPor lo tanto, no se ejecuta el ciclo en consola`);
     }
+}
+function pedirNumero1(){
+    num1 = parseInt(prompt("Escribe un número:"));
+    return num1;
+}
+function pedirNumero2(){
+    num2 = parseInt(prompt("Escribe otro número:"));
+    return num2;
 }
 function suma(num1, num2) {
     let resultado = num1 + num2;
@@ -48,55 +69,31 @@ while(tipoDeCuenta !== "ESC"){
     if (tipoDeCuenta === 1) {
         // Sumar números
         alert("ATENCIÓN!\nEstas por hacer una suma.");
-        let num1 = parseInt(prompt("Escribe un número:"));
-        let num2 = parseInt(prompt("Escribe otro número:"));
+        pedirNumero1();
+        pedirNumero2();
         suma(num1, num2);
-        let peticion = prompt("Quieres hacer otra operacion?");
-        if(peticion === "Si" || peticion === "si" || peticion === "SI") {
-            tipoDeCuenta;
-        } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
-            break;
-        }
+        pregunta();
     } else if (tipoDeCuenta === 2) {
         // Restar números
         alert("ATENCIÓN!\nEstas por hacer una resta.");
-        let num1 = parseInt(prompt("Escribe un número:"));
-        let num2 = parseInt(prompt("Escribe otro número:"));
+        pedirNumero1();
+        pedirNumero2();
         resta(num1, num2);
-        let peticion = prompt("Quieres hacer otra operacion?");
-        if(peticion === "Si" || peticion === "si" || peticion === "SI") {
-            tipoDeCuenta;
-        } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
-            break;
-        }
+        pregunta();
     } else if (tipoDeCuenta === 3) {
         // Multiplicar números
         alert("ATENCIÓN!\nEstas por hacer una multiplicación.");
-        let num1 = parseInt(prompt("Escribe un número:"));
-        let num2 = parseInt(prompt("Escribe otro número:"));
+        pedirNumero1();
+        pedirNumero2();
         multiplicacion(num1, num2);
-        let peticion = prompt("Quieres hacer otra operacion?");
-        if(peticion === "Si" || peticion === "si" || peticion === "SI") {
-            tipoDeCuenta;
-        } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
-            break;
-        }
+        pregunta();
     } else if (tipoDeCuenta === 4) {
         // Division números
         alert("ATENCIÓN!\nEstas por hacer una división.");
-        let num1 = parseInt(prompt("Escribe un número:"));
-        let num2 = parseInt(prompt("Escribe otro número:"));
+        pedirNumero1();
+        pedirNumero2();
         division(num1, num2);
-        let peticion = prompt("Quieres hacer otra operacion?");
-        if(peticion === "Si" || peticion === "si" || peticion === "SI") {
-            tipoDeCuenta;
-        } else {
-            alert(`Entiendo ${nombre} que no quieres realizar otra operacion. Hasta la proxima!`);
-            break;
-        }
+        pregunta();
     } else {
         // Respuesta por 'Default'
         reiniciar();
