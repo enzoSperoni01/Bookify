@@ -16,6 +16,11 @@ function pregunta(){
         tipoDeCuenta = "ESC";
     }
 }
+function personaUsuario(nombre, apellido) {
+    const usuarioPersona = new Persona(nombre, apellido);
+    usuarioPersona.hablarJS();
+    usuarioPersona.hablarUsuario();
+}
 let ciclo = function(resultado, cuenta) {
     if (resultado < 50){
         alert("CICLO:\nRevisa la consola que hay una serie de\nnúmeros en base a tu resultado");
@@ -55,47 +60,62 @@ function division(num1, num2) {
     alert(`Hey ${nombre}, el resultado de tu suma es: ${resultado}`);
     ciclo(resultado, "División");
 }
+class Persona {
+    constructor(nombre, apellido, cuenta, resultado) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cuenta = cuenta;
+        this.resultado = resultado;
+    }
+    hablarJS() {
+        alert(`JS: "Muy bien ${this.nombre} ${this.apellido}, ahora haremos una cuenta!"`);
+    }
+    hablarUsuario() {
+        alert(`${this.nombre}: "Genial, hagamoslo!"`);
+    }
+}
 
-// Pedir nombre
-const nombre = prompt("Hola usuario, soy JavaScript! ¿Cual es tu nombre?");
-const apellido = prompt("Ahora dime, ¿Cual es tu apellido?");
-alert(`Muy bien ${nombre} ${apellido}, ahora haremos una cuenta!`);
+const nombre = prompt('JS: "Hola usuario, soy JavaScript! ¿Cual es tu nombre?"');
+const apellido = prompt(`JS: "Bien ${nombre}, ahora dime, ¿Cual es tu apellido?"`);
+personaUsuario(nombre, apellido);
 
 let tipoDeCuenta;
 
 while(tipoDeCuenta !== "ESC"){
-    let tipoDeCuenta = prompt(`Que tipo de cuenta deseas realizar ${nombre}?\n1: Suma, 2: Resta, 3: Multiplicación, 4:Division`);
-    tipoDeCuenta = parseInt(tipoDeCuenta);
-    if (tipoDeCuenta === 1) {
-        // Sumar números
-        alert("ATENCIÓN!\nEstas por hacer una suma.");
-        pedirNumero1();
-        pedirNumero2();
-        suma(num1, num2);
-        pregunta();
-    } else if (tipoDeCuenta === 2) {
-        // Restar números
-        alert("ATENCIÓN!\nEstas por hacer una resta.");
-        pedirNumero1();
-        pedirNumero2();
-        resta(num1, num2);
-        pregunta();
-    } else if (tipoDeCuenta === 3) {
-        // Multiplicar números
-        alert("ATENCIÓN!\nEstas por hacer una multiplicación.");
-        pedirNumero1();
-        pedirNumero2();
-        multiplicacion(num1, num2);
-        pregunta();
-    } else if (tipoDeCuenta === 4) {
-        // Division números
-        alert("ATENCIÓN!\nEstas por hacer una división.");
-        pedirNumero1();
-        pedirNumero2();
-        division(num1, num2);
-        pregunta();
-    } else {
-        // Respuesta por 'Default'
-        reiniciar();
+    let tipoDeCuenta = parseInt(
+        prompt(`Que tipo de cuenta deseas realizar ${nombre}?\n1: Suma, 2: Resta, 3: Multiplicación, 4:Division`)
+    );
+    switch(tipoDeCuenta) {
+        case 1:
+            alert("ATENCIÓN!\nEstas por hacer una suma.");
+            pedirNumero1();
+            pedirNumero2();
+            suma(num1, num2);
+            pregunta();
+            break;
+        case 2:
+            alert("ATENCIÓN!\nEstas por hacer una resta.");
+            pedirNumero1();
+            pedirNumero2();
+            resta(num1, num2);
+            pregunta();
+            break;
+        case 3:
+            alert("ATENCIÓN!\nEstas por hacer una multiplicación.");
+            pedirNumero1();
+            pedirNumero2();
+            multiplicacion(num1, num2);
+            pregunta();
+            break;
+        case 4:
+            alert("ATENCIÓN!\nEstas por hacer una división.");
+            pedirNumero1();
+            pedirNumero2();
+            division(num1, num2);
+            pregunta();
+            break;
+        default:
+            reiniciar();
+            break;
     }
 }
