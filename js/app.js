@@ -61,11 +61,9 @@ function division(num1, num2) {
     ciclo(resultado, "División");
 }
 class Persona {
-    constructor(nombre, apellido, cuenta, resultado) {
+    constructor(nombre, apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.cuenta = cuenta;
-        this.resultado = resultado;
     }
     hablarJS() {
         alert(`JS: "Muy bien ${this.nombre} ${this.apellido}, ahora haremos una cuenta!"`);
