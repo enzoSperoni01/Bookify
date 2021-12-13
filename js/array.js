@@ -12,7 +12,8 @@ let paginas;
 
 let listadoLibros = [];
 
-function capitalize(palabra) {
+function capitalize(palabra) { 
+    // Hace que, si el usuario pone el nombre del genero en minuscula, la primera letra se pondra en mayuscula
     return palabra[0].toUpperCase() + palabra.slice(1);
 }
 function ordenarPaginas() {
@@ -48,7 +49,6 @@ function añadirOtro(decision) {
         nombreLibro = "ESC";
     }
 }
-
 
 let nombreLibro;
 
