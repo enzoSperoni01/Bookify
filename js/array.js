@@ -1,3 +1,6 @@
+let añadirLibro;
+let genero;
+let paginas;
 class Libros {
     constructor(libro, genero, paginas) {
         this.libro = libro.toUpperCase();
@@ -6,49 +9,13 @@ class Libros {
     }
 }
 
-let añadirLibro;
-let genero;
-let paginas;
-
 let listadoLibros = [];
 
-function capitalize(palabra) { 
-    // Hace que, si el usuario pone el nombre del genero en minuscula, la primera letra se pondra en mayuscula
-    return palabra[0].toUpperCase() + palabra.slice(1);
-}
-function ordenarPaginas() {
-    listadoLibros.sort(function (a, b) { // Ordena los elementos del objeto de menor a payor segun su cantidad de paginas
-        if (a.paginas > b.paginas) {
-            return 1;
-        }
-        if (a.paginas < b.paginas) {
-            return -1;
-        }
-    
-        return 0;
-    });
-}
-function nombreDelLibro(libro) {
-    alert(`El libro añadido es: ${libro}`);
-}
-function generoLibro(genero) {
-    alert(`El genero añadido para es: ${genero}`);
-}
-function cantPaginas(paginas) {
-    alert(`Cantidad de paginas: ${paginas}`);
-}
-function añadirOtro(decision) {
-    decision = decision.toLowerCase();
-    if(decision === "si") {
-        nombreLibro;
-    } else if(decision === "no") {
-        alert("Perfecto, entra a tu consola para ver el listado de tus libros.\nNos vemos!");
-        nombreLibro = "ESC";
-    } else {
-        alert("Perfecto, entra a tu consola para ver el listado de tus libros.\nNos vemos!");
-        nombreLibro = "ESC";
-    }
-}
+let nombre = prompt('JS: "Hola usuario, soy JavaScript! ¿Cual es tu nombre?"');
+nombre = capitalize(nombre);
+let apellido = prompt(`JS: "Bien ${nombre}, ahora dime, ¿Cual es tu apellido?"`);
+apellido = capitalize(apellido);
+alert(`JS: "Muy bien ${nombre} ${apellido}, comienza a anotar tus libros!"`);
 
 let nombreLibro;
 
