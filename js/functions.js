@@ -8,7 +8,7 @@ function pregunta(){
     if(peticion === "si") {
         tipoDeCuenta;
     } else {
-        alert(`Entiendo ${nombre} que no quieres realizar otra operacion.\n Hasta la proxima!`);
+        alert(`Entiendo ${nombre} que no quieres realizar otra operacion.\nHasta la proxima!`);
         tipoDeCuenta = "ESC";
     }
 }
