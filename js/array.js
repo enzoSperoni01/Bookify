@@ -1,7 +1,7 @@
 class Libros {
     constructor(libro, genero, paginas) {
         this.libro = libro.toUpperCase();
-        this.genero = genero;
+        this.genero = capitalize(genero);
         this.paginas = parseInt(paginas);
     }
 }
@@ -12,6 +12,9 @@ let paginas;
 
 let listadoLibros = [];
 
+function capitalize(palabra) {
+    return palabra[0].toUpperCase() + palabra.slice(1);
+}
 function ordenarPaginas() {
     listadoLibros.sort(function (a, b) { // Ordena los elementos del objeto de menor a payor segun su cantidad de paginas
         if (a.paginas > b.paginas) {
