@@ -34,13 +34,5 @@ while(nombreLibro !== "ESC") {
     añadirOtro(reiniciar);
 }
 
-function imprimirLibros(){
-    let html = "";
-    listadoLibros.forEach(function(book){            
-        html += `<li>Titulo: ${book.libro},<br>Genero: ${book.genero},<br>Paginas: ${book.paginas}</li>`;
-    });
-    document.getElementById("biblioteca").innerHTML = html;
-}
-
 imprimirLibros();
 console.log(listadoLibros);
