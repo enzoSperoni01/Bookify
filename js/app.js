@@ -1,21 +1,23 @@
 let añadirLibro;
 let genero;
 let paginas;
-class Libros {
-    constructor(libro, genero, paginas) {
-        this.libro = libro.toUpperCase();
-        this.genero = capitalize(genero);
-        this.paginas = parseInt(paginas);
-    }
-}
 
 let listadoLibros = [];
 
 let nombre = prompt('JS: "Hola usuario, soy JavaScript! ¿Cual es tu nombre?"');
 nombre = capitalize(nombre);
-let apellido = prompt(`JS: "Bien ${nombre}, ahora dime, ¿Cual es tu apellido?"`);
-apellido = capitalize(apellido);
-alert(`JS: "Muy bien ${nombre} ${apellido}, comienza a anotar tus libros!"`);
+
+if (localStorage.getItem("name") !== nombre) {
+    alert(`JS: "Veo queres nuevo por aqui ${nombre}..."`);
+    localStorage.setItem("name", nombre);
+    let apellido = prompt(`JS: "Dime, ¿Cual es tu apellido?"`);
+    apellido = capitalize(apellido);
+    localStorage.setItem("lastname", apellido);
+    alert(`JS: "Genial ${nombre} ${apellido}, comienza a anotar tus libros!"`);
+} else {
+    let nombreBD = localStorage.getItem("name");
+    alert(`Bienvenido de vuelta ${nombreBD}!\nVe a seguir anotando tus libros favoritos...`);
+}
 
 let nombreLibro;
 
