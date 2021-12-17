@@ -34,12 +34,13 @@ while(nombreLibro !== "ESC") {
     añadirOtro(reiniciar);
 }
 
-for(let book of listadoLibros) { // Imprime solo un item list de todo el array
-    let biblioteca = document.getElementById("biblioteca");
-    biblioteca.innerHTML = `<ol>
-                                <li>Titulo: ${book.libro},<br> Genero: ${book.genero},<br> Paginas: ${book.paginas}</li>
-                            </ol>`;
-    document.body.appenChild(biblioteca);
+function imprimirLibros(){
+    let html = "";
+    listadoLibros.forEach(function(book){            
+        html += `<li>Titulo: <b>${book.libro}</b>,<br>Genero: <b>${book.genero}</b>,<br>Paginas: <b>${book.paginas}</b></li>`;
+    });
+    document.getElementById("biblioteca").innerHTML = html;
 }
 
+imprimirLibros();
 console.log(listadoLibros);
