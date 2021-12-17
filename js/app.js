@@ -37,7 +37,7 @@ while(nombreLibro !== "ESC") {
 function imprimirLibros(){
     let html = "";
     listadoLibros.forEach(function(book){            
-        html += `<li>Titulo: <b>${book.libro}</b>,<br>Genero: <b>${book.genero}</b>,<br>Paginas: <b>${book.paginas}</b></li>`;
+        html += `<li>Titulo: ${book.libro},<br>Genero: ${book.genero},<br>Paginas: ${book.paginas}</li>`;
     });
     document.getElementById("biblioteca").innerHTML = html;
 }
