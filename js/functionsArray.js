@@ -28,10 +28,10 @@ function añadirOtro(decision) {
     if(decision === "si") {
         nombreLibro;
     } else if(decision === "no") {
-        alert(`Perfecto ${nombre}, entra a tu consola para ver el listado de tus libros.\nNos vemos!`);
+        alert(`Perfecto ${nombre}, encontraras tus libros aqui debajo.\nNos vemos!`);
         nombreLibro = "ESC";
     } else {
-        alert(`Perfecto ${nombre}, entra a tu consola para ver el listado de tus libros.\nNos vemos!`);
+        alert(`Perfecto ${nombre}, encontraras tus libros aqui debajo.\nNos vemos!`);
         nombreLibro = "ESC";
     }
 }
