@@ -15,9 +15,11 @@ function ordenarPaginas() {
     });
 }
 function nombreDelLibro(libro) {
+    libro = capitalize(libro);
     alert(`El libro añadido es: ${libro}`);
 }
 function generoLibro(genero) {
+    genero = capitalize(genero);
     alert(`El genero añadido para es: ${genero}`);
 }
 function cantPaginas(paginas) {
