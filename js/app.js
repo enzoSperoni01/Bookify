@@ -4,7 +4,7 @@ let paginas;
 
 let listadoLibros = [];
 
-let nombre = prompt('JS: "Hola usuario, soy JavaScript! ¿Cual es tu nombre?"');
+let nombre = prompt('JS: "Hola usuario, soy JavaScript!\nPor favor, dime ¿Cual es tu nombre?"');
 nombre = capitalize(nombre);
 
 if (localStorage.getItem("name") !== nombre) {
@@ -32,6 +32,14 @@ while(nombreLibro !== "ESC") {
     ordenarPaginas();
     let reiniciar = prompt("Quieres añadir otro libro?");
     añadirOtro(reiniciar);
+}
+
+for(let book of listadoLibros) { // Imprime solo un item list de todo el array
+    let biblioteca = document.getElementById("biblioteca");
+    biblioteca.innerHTML = `<ol>
+                                <li>Titulo: ${book.libro},<br> Genero: ${book.genero},<br> Paginas: ${book.paginas}</li>
+                            </ol>`;
+    document.body.appenChild(biblioteca);
 }
 
 console.log(listadoLibros);
