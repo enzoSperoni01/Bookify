@@ -7,13 +7,28 @@
     left: 0;
     padding: .8rem;
     &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &__anchor {
+            text-decoration: none;
+            &__h2 {
+                font-size: 2.4rem;
+                color: white;
+                letter-spacing: .1rem;
+                font-weight: $font-black;
+                span {
+                    font-weight: $font-light;
+                }
+            }
+        }
         &__list {
             list-style: none;
             display: flex;
             justify-content: space-around;
             align-content: center;
             li {
-                padding: .8rem;
+                padding: .9rem 2.4rem;
                 a {
                     font-size: 1.4rem;
                     font-weight: bold;
@@ -23,7 +38,7 @@
                     transition: all 220ms;
                 }
                 a:hover {
-                    color: #ccc;
+                    color: hsl(0, 0%, 80%);
                 }
             }
         }

@@ -4,7 +4,7 @@ html {
   html body {
     font-family: "Source Sans Pro", sans-serif;
     background-color: #2f3e6a;
-    color: #7adaeb; }
+    color: white; }
 
 * {
   padding: 0;
@@ -19,22 +19,35 @@ html {
   top: 0;
   left: 0;
   padding: .8rem; }
-  .header__nav__list {
-    list-style: none;
+  .header__nav {
     display: flex;
-    justify-content: space-around;
-    align-content: center; }
-    .header__nav__list li {
-      padding: .8rem; }
-      .header__nav__list li a {
-        font-size: 1.4rem;
-        font-weight: bold;
-        letter-spacing: .1rem;
+    align-items: center;
+    justify-content: space-around; }
+    .header__nav__anchor {
+      text-decoration: none; }
+      .header__nav__anchor__h2 {
+        font-size: 2.4rem;
         color: white;
-        text-decoration: none;
-        transition: all 220ms; }
-      .header__nav__list li a:hover {
-        color: #ccc; }
+        letter-spacing: .1rem;
+        font-weight: 900; }
+        .header__nav__anchor__h2 span {
+          font-weight: 300; }
+    .header__nav__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-content: center; }
+      .header__nav__list li {
+        padding: .9rem 2.4rem; }
+        .header__nav__list li a {
+          font-size: 1.4rem;
+          font-weight: bold;
+          letter-spacing: .1rem;
+          color: white;
+          text-decoration: none;
+          transition: all 220ms; }
+        .header__nav__list li a:hover {
+          color: #cccccc; }
 
 section {
   width: 100%;
@@ -62,6 +75,12 @@ section {
     section #biblioteca li {
       list-style: none;
       margin: .5rem 2.4rem;
-      background-color: #009999;
+      background-color: teal;
       border-radius: 1.2rem;
-      padding: 2.5rem; }
+      padding: 2.5rem;
+      position: relative;
+      bottom: 0;
+      transition: all 240ms; }
+    section #biblioteca li:hover {
+      bottom: .5rem;
+      box-shadow: 0px 14px 15px -12px rgba(0, 0, 0, 0.75); }
