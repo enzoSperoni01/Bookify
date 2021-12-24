@@ -34,36 +34,32 @@
         <main>
             <h1>Libreria</h1>
             <p>Agrega los libros que desees!</p>
-            <section data-aos="fade-up" data-aos-duration="1000">
-                <form action="#">
-                    <label for="titulo">¿Cual es el titulo del libro?
-                        <input type="text" id="nombreLibro" name="titulo">
-                    </label>
+            <div>
+                <section data-aos="fade-up" data-aos-duration="1000">
+                    <form action="#">
+                        <label for="titulo">¿Cual es el titulo del libro?
+                            <input type="text" id="nombreLibro" name="titulo">
+                        </label>
+            
+                        <label for="genero">¿De que genero es el libro?
+                            <input type="text" id="generoLibro" name="genero">
+                        </label>
+            
+                        <label for="paginas">¿Cuantas paginas tiene el libro?
+                            <input type="number" id="paginasLibro">
+                        </label>
         
-                    <label for="genero">¿De que genero es el libro?
-                        <input type="text" id="generoLibro" name="genero">
-                    </label>
-        
-                    <label for="paginas">¿Cuantas paginas tiene el libro?
-                        <input type="number" id="paginasLibro">
-                    </label>
-    
-                    <div class="buttons">
-                        <input type="reset" value="Limpiar entradas">
-                        <input type="button" id="botonListo" onclick="botonListo()" value="Listo!">
-                    </div>
-                </form>
-            </section>
-        </main>
-
-        <!-- <section>
-            <h1>Libreria</h1>
-            <h2>Aqui abajo estaran tus libros:</h2>
-            <div data-aos="fade-up" data-aos-duration="600">
-                <ol id="biblioteca">
-                </ol>
+                        <div class="buttons">
+                            <input type="reset" value="Limpiar entradas">
+                            <input type="button" id="botonListo" onclick="botonListo()" value="Listo!">
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <!--Impresion de los libros-->
+                </section>
             </div>
-        </section> -->
+        </main>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>

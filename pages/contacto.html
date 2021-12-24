@@ -59,11 +59,17 @@
                         id="comentarios" 
                         cols="30" 
                         rows="10"
+                        onkeypress="if(event.keyCode==13){enviarContacto()}"
                         placeholder="Escribe tu mensaje..."
                         ></textarea>
                     </label>
 
-                    <input type="button" id="button-contact" onclick="enviarContacto()" value="Enviar formulario">
+                    <input 
+                    type="button" 
+                    id="button-contact" 
+                    onclick="enviarContacto()"
+                    value="Enviar formulario"
+                    >
 
                 </div>
             </form>

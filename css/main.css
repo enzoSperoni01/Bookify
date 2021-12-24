@@ -62,43 +62,47 @@ main {
     font-size: 2.2rem;
     font-weight: 600;
     letter-spacing: .1rem; }
-  main section form {
-    display: flex;
-    flex-direction: column; }
-    main section form label {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      font-weight: 600; }
-      main section form label input {
-        width: 100%;
-        font-size: 1.4rem;
-        font-weight: 600;
-        background-color: #232d4d;
-        border-bottom: 0 solid #005fff;
-        color: white;
-        border: none;
-        outline: none;
-        padding: .8rem 1.6rem;
-        margin: .5rem 0;
-        transition: all 250ms; }
-      main section form label input:focus, main section form label :hover {
-        border-bottom: 4px solid #005eff; }
-    main section form .buttons {
+  main div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    main div section form {
       display: flex;
-      justify-content: space-between; }
-      main section form .buttons input {
-        background-color: #0069cc;
-        border: none;
-        padding: 1rem 2.4rem;
-        margin-top: 1rem;
-        color: white;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 240ms;
-        text-transform: uppercase;
-        letter-spacing: .1rem; }
-      main section form .buttons input:hover {
-        background-color: #004f99; }
+      flex-direction: column; }
+      main div section form label {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600; }
+        main div section form label input {
+          width: 100%;
+          font-size: 1.4rem;
+          font-weight: 600;
+          background-color: #232d4d;
+          border-bottom: 0 solid #005fff;
+          color: white;
+          border: none;
+          outline: none;
+          padding: .8rem 1.6rem;
+          margin: .5rem 0;
+          transition: all 250ms; }
+        main div section form label input:focus,
+        main div section form label input:hover {
+          border-bottom: 4px solid #005eff; }
+      main div section form .buttons {
+        display: flex;
+        justify-content: space-between; }
+        main div section form .buttons input {
+          background-color: #0069cc;
+          border: none;
+          padding: 1rem 2.4rem;
+          margin-top: 1rem;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 240ms;
+          text-transform: uppercase;
+          letter-spacing: .1rem; }
+        main div section form .buttons input:hover {
+          background-color: #004f99; }
 
 .main {
   display: grid;
