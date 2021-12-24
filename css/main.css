@@ -91,14 +91,14 @@ section {
   height: 100vh;
   place-items: center; }
   .main__form__title {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     text-align: center;
     margin-bottom: 2.5rem; }
   .main__form__div {
     display: flex;
     flex-direction: column; }
     .main__form__div label {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
       font-weight: 600;
       display: flex;
       flex-direction: column;
@@ -106,7 +106,7 @@ section {
     .main__form__div label:first-child {
       margin-top: 0; }
     .main__form__div input {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
       background-color: #232d4d;
       border: none;
@@ -122,7 +122,7 @@ section {
       border-bottom: 3px solid #005eff; }
     .main__form__div textarea {
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 600;
       background-color: #232d4d;
       border-bottom: 0 solid #005fff;
@@ -139,3 +139,30 @@ section {
       color: #999999; }
     .main__form__div textarea:focus {
       border-bottom: 3px solid #005fff; }
+    .main__form__div #button-contact {
+      background-color: #0069cc;
+      border: none;
+      padding: 1rem 2.4rem;
+      margin-top: 1.5rem;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 240ms;
+      text-transform: uppercase; }
+    .main__form__div #button-contact:hover {
+      background-color: #004f99; }
+
+.main-deal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 65vh; }
+  .main-deal h1 {
+    font-size: 4rem; }
+  .main-deal p {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center; }
+    .main-deal p span {
+      color: #6699ff; }
