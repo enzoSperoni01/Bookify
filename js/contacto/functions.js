@@ -2,7 +2,7 @@ function enviarContacto() {
     nombreApellido = document.getElementById("nombreApellido").value;
     correoElectronico = document.getElementById("correoElectronico").value;
     mensaje = document.getElementById("comentarios").value;
-    let contactoDeUsuario = new Contacto(nombreApellido, correoElectronico, mensaje);
+    contactoDeUsuario = new Contacto(nombreApellido, correoElectronico, mensaje);
     localStorage.setItem('datos', JSON.stringify(contactoDeUsuario));
 
     let boton = document.getElementById("button-contact");
