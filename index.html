@@ -33,7 +33,8 @@
 
         <main>
             <h1>Libreria</h1>
-            <section>
+            <p>Agrega los libros que desees!</p>
+            <section data-aos="fade-up" data-aos-duration="1000">
                 <form action="#">
                     <label for="titulo">¿Cual es el titulo del libro?
                         <input type="text" id="nombreLibro" name="titulo">
@@ -48,7 +49,7 @@
                     </label>
     
                     <div class="buttons">
-                        <input type="button" id="botonReiniciar" onclick="botonReiniciar()" value="Agregar otro">
+                        <input type="reset" value="Limpiar entradas">
                         <input type="button" id="botonListo" onclick="botonListo()" value="Listo!">
                     </div>
                 </form>

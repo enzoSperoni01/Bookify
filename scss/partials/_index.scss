@@ -6,7 +6,12 @@ main {
     h1 {
         font-size: 5rem;
         font-weight: bold;
-        margin: 2rem;
+        margin-top: 2rem;
+    }
+    p {
+        font-size: 2.2rem;
+        font-weight: $font-semiBold;
+        letter-spacing: .1rem;
     }
     section {
         form {
