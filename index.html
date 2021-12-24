@@ -31,10 +31,12 @@
         </header>
 
         <main>
-            <h1>Libreria</h1>
-            <p>Agrega los libros que desees!</p>
+            <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0">
+                Libreria
+            </h1>
             <div>
                 <section data-aos="fade-up" data-aos-duration="1000">
+                    <p>Agrega los libros que desees!</p>
                     <form action="#">
                         <label for="titulo">¿Cual es el titulo del libro?
                             <input type="text" id="nombreLibro" name="titulo">
@@ -58,8 +60,9 @@
                         </div>
                     </form>
                 </section>
-                <section>
+                <section data-aos="fade-up" data-aos-duration="1000">
                     <!--Impresion de los libros-->
+                    <p>Tus libros:</p>
                     <div>
                         <ol id="biblioteca"></ol>
                     </div>

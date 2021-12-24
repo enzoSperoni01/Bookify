@@ -58,13 +58,14 @@ main {
     font-size: 5rem;
     font-weight: bold;
     margin-top: 2rem; }
-  main p {
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: .1rem; }
   main div {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    main div section p {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      margin-bottom: 4rem; }
     main div section form {
       display: flex;
       flex-direction: column; }
@@ -103,6 +104,23 @@ main {
           letter-spacing: .1rem; }
         main div section form .buttons input:hover {
           background-color: #004f99; }
+    main div section {
+      margin-left: 5rem; }
+      main div section p {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        margin-bottom: 4rem; }
+      main div section #biblioteca {
+        list-style: none;
+        display: flex;
+        width: 100%; }
+        main div section #biblioteca li {
+          font-size: 1.2rem;
+          background-color: #0059b3;
+          padding: 1rem 1.5rem;
+          margin: 0 .5rem;
+          border-radius: 1rem; }
 
 .main {
   display: grid;
