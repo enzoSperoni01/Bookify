@@ -7,10 +7,10 @@
         <title>Bookify | Inicio</title>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/main.css">
-        <script src="./js/books/functionsArray.js" defer></script>
-        <script src="./js/books/Libros.class.js" defer></script>
+        <script src="./js/books/functionsArray.js"></script>
+        <script src="./js/books/Libros.class.js"></script>
+        <script src="./js/books/app-2.js" defer></script>
         <!-- <script src="./js/books/app.js" defer></script> -->
-        <script src="./js/books/app-2.js"></script>
     </head>
     <body>
         <header class="header">
@@ -46,17 +46,24 @@
                         </label>
             
                         <label for="paginas">¿Cuantas paginas tiene el libro?
-                            <input type="number" id="paginasLibro">
+                            <input type="number" id="paginasLibro" onkeypress="if(event.keyCode==13){botonListo()}">
                         </label>
         
                         <div class="buttons">
                             <input type="reset" value="Limpiar entradas">
-                            <input type="button" id="botonListo" onclick="botonListo()" value="Listo!">
+                            <input 
+                            type="button" 
+                            id="boton-listo" 
+                            onclick="botonListo()" 
+                            value="Listo!">
                         </div>
                     </form>
                 </section>
                 <section>
                     <!--Impresion de los libros-->
+                    <div>
+                        <ol id="biblioteca"></ol>
+                    </div>
                 </section>
             </div>
         </main>

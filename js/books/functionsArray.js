@@ -18,7 +18,7 @@ function nombreDelLibro(libro) {
     libro = capitalize(libro);
     alert(`El libro añadido es: ${libro}`);
 }
-function generoLibro(genero) {
+function generoDelLibro(genero) {
     genero = capitalize(genero);
     alert(`El genero añadido para es: ${genero}`);
 }
