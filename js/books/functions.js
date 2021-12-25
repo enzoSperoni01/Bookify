@@ -14,17 +14,6 @@ function ordenarPaginas() {
         return 0;
     });
 }
-function nombreDelLibro(libro) {
-    libro = capitalize(libro);
-    alert(`El libro añadido es: ${libro}`);
-}
-function generoDelLibro(genero) {
-    genero = capitalize(genero);
-    alert(`El genero añadido para es: ${genero}`);
-}
-function cantPaginas(paginas) {
-    alert(`Cantidad de paginas: ${paginas}`);
-}
 function añadirOtro(decision) {
     decision = decision.toLowerCase();
     if(decision === "si") {
