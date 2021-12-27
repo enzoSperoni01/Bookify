@@ -29,7 +29,11 @@ function añadirOtro(decision) {
 function imprimirLibros(){
     let html = "";
     listadoLibros.forEach(function(book){            
-        html += `<li data-aos="fade-up" data-aos-duration="1000">Titulo: ${book.libro},<br>Genero: ${book.genero},<br>Paginas: ${book.paginas}</li>`;
+        html += `<li data-aos="fade-up" data-aos-duration="1000">
+                    Titulo: ${book.libro},<br>
+                    Genero: ${book.genero},<br>
+                    Paginas: ${book.paginas}
+                </li>`;
     });
     document.getElementById("biblioteca").innerHTML = html;
 }
