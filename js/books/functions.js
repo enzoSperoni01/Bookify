@@ -29,6 +29,7 @@ function imprimirLibros(){
 function eliminarItem(){
     let botonEliminar = document.getElementById("botonEliminarLibro");
     botonEliminar.addEventListener("click", () => {
-        // Stand by
+        let listaOl = document.getElementById("biblioteca");
+        listaOl.removeChild();
     });
 }
