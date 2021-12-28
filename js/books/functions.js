@@ -25,10 +25,10 @@ function imprimirLibros(){
                 </li>`;
     });
     document.getElementById("biblioteca").innerHTML = html;
-
+}
+function eliminarItem(){
     let botonEliminar = document.getElementById("botonEliminarLibro");
     botonEliminar.addEventListener("click", () => {
-        let listaOl = document.getElementById("biblioteca");
-        // Revisar
+        // Stand by
     });
 }
