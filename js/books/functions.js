@@ -20,8 +20,15 @@ function imprimirLibros(){
         html += `<li data-aos="fade-up" data-aos-duration="1000">
                     Titulo: ${book.libro},<br>
                     Genero: ${book.genero},<br>
-                    Paginas: ${book.paginas}
+                    Paginas: ${book.paginas}<br>
+                    <button id="botonEliminarLibro">Eliminar</button>
                 </li>`;
     });
     document.getElementById("biblioteca").innerHTML = html;
+
+    let botonEliminar = document.getElementById("botonEliminarLibro");
+    botonEliminar.addEventListener("click", () => {
+        let listaOl = document.getElementById("biblioteca");
+        // Revisar
+    });
 }
