@@ -14,18 +14,6 @@ function ordenarPaginas() {
         return 0;
     });
 }
-function añadirOtro(decision) {
-    decision = decision.toLowerCase();
-    if(decision === "si") {
-        nombreLibro;
-    } else if(decision === "no") {
-        alert(`Perfecto ${nombre}, encontraras tus libros aqui debajo.\nNos vemos!`);
-        nombreLibro = "ESC";
-    } else {
-        alert(`Perfecto ${nombre}, encontraras tus libros aqui debajo.\nNos vemos!`);
-        nombreLibro = "ESC";
-    }
-}
 function imprimirLibros(){
     let html = "";
     listadoLibros.forEach(function(book){            
