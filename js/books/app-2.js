@@ -10,7 +10,8 @@ function botonListo() {
     generoLibro = capitalize(generoLibro);
     paginasLibro = document.getElementById("paginasLibro").value;
 
-    listadoLibros.push(new Libros(tituloLibro, generoLibro, paginasLibro));
+    const nuevoLibro = new Libros(tituloLibro, generoLibro, paginasLibro);
+    listadoLibros.push(nuevoLibro);
     ordenarPaginas();
     imprimirLibros();
 }
