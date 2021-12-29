@@ -1,9 +1,11 @@
+// Si el usuario pone una palabra en minuscula, la primera letra se pondra en mayuscula
 function capitalize(palabra) { 
-    // Si el usuario pone una palabra en minuscula, la primera letra se pondra en mayuscula
     return palabra[0].toUpperCase() + palabra.slice(1);
 }
+
+// Ordena los elementos del objeto de menor a payor segun su cantidad de paginas
 function ordenarPaginas() {
-    listadoLibros.sort(function (a, b) { // Ordena los elementos del objeto de menor a payor segun su cantidad de paginas
+    listadoLibros.sort(function (a, b) {
         if (a.paginas > b.paginas) {
             return 1;
         }
@@ -14,8 +16,13 @@ function ordenarPaginas() {
         return 0;
     });
 }
+
+// Esta funcion imprimira los libros escritos por el Usuario
 function imprimirLibros() {
     let html = "";
+
+    // La variable "i" se encargara de crear IDs distintos por cada <li>
+    // Para que cada <li> sea unico y podamos operar con cada uno
     let i = 0;
     listadoLibros.forEach(function(book) {
         html += `<li id="libro-${i}" class="section__div__list__item" data-aos="fade-up" data-aos-duration="600">
@@ -28,6 +35,12 @@ function imprimirLibros() {
     });
     document.getElementById("biblioteca").innerHTML = html;
 }
+
+/******************************************************
+Toma el id de cada <li> y con un parametro lo selecciona
+en el atributo onclick y agrega un boton con la funcionalidad
+de eliminar el ID que el usuario elija
+********************************************************/
 function eliminarLibro(num) {
     let libroBorrar = document.getElementById(`libro-${num}`);
     libroBorrar.remove();
