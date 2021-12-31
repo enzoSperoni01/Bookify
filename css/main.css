@@ -49,31 +49,32 @@ html {
         .header__nav__list li a:hover {
           color: #cccccc; }
 
-main {
+.main-index {
   display: grid;
   width: 100%;
   height: 80vh;
   place-items: center; }
-  main h1 {
+  .main-index h1 {
     font-size: 5rem;
     font-weight: bold;
     margin-top: 2rem; }
-  main div {
+  .main-index div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    main div section p {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%; }
+    .main-index div section p {
       font-size: 2.2rem;
       font-weight: 600;
       letter-spacing: .1rem;
       margin-bottom: 4rem; }
-    main div section form {
+    .main-index div section form {
       display: flex;
       flex-direction: column; }
-      main div section form label {
+      .main-index div section form label {
         font-size: 2rem;
         margin-bottom: 1.5rem;
         font-weight: 600; }
-        main div section form label input {
+        .main-index div section form label input {
           width: 100%;
           font-size: 1.4rem;
           font-weight: 600;
@@ -85,13 +86,14 @@ main {
           padding: .8rem 1.6rem;
           margin: .5rem 0;
           transition: all 250ms; }
-        main div section form label input:focus,
-        main div section form label input:hover {
+        .main-index div section form label input:focus,
+        .main-index div section form label input:hover {
           border-bottom: 4px solid #005eff; }
-      main div section form .buttons {
+      .main-index div section form .buttons {
         display: flex;
-        justify-content: space-between; }
-        main div section form .buttons input {
+        justify-content: space-between;
+        width: 100%; }
+        .main-index div section form .buttons input {
           background-color: #0069cc;
           border: none;
           padding: 1rem 2.4rem;
@@ -102,20 +104,21 @@ main {
           transition: all 240ms;
           text-transform: uppercase;
           letter-spacing: .1rem; }
-        main div section form .buttons input:hover {
+        .main-index div section form .buttons input:hover {
           background-color: #004f99; }
-    main div .section {
+    .main-index div .section {
       margin-left: 5rem; }
-      main div .section p {
+      .main-index div .section p {
         font-size: 2.2rem;
         font-weight: 600;
         letter-spacing: .1rem;
         margin-bottom: 4rem; }
-      main div .section__div__list {
+      .main-index div .section__div__list {
         list-style: none;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         width: 100%; }
-        main div .section__div__list__item {
+        .main-index div .section__div__list__item {
           font-size: 1.2rem;
           background-color: #0059b3;
           padding: 1rem 1.5rem;
@@ -124,7 +127,7 @@ main {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap; }
-          main div .section__div__list__item__btn {
+          .main-index div .section__div__list__item__btn {
             padding: .4rem .8rem;
             margin: 1rem;
             border-radius: .2rem;
@@ -134,7 +137,7 @@ main {
             font-weight: 700;
             background-color: #3399ff;
             transition: all 240ms; }
-          main div .section__div__list__item__btn:hover {
+          .main-index div .section__div__list__item__btn:hover {
             background-color: #0073e6; }
 
 .main {
