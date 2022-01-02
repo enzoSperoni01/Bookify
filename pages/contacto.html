@@ -41,7 +41,7 @@
                         name="nombre" 
                         id="nombreApellido" 
                         placeholder="Escribe tu nombre y apellido..." 
-                        />
+                        required/>
                     </label>
 
                     <label for="email">Correo Electronico:
@@ -50,7 +50,7 @@
                         name="email" 
                         id="correoElectronico" 
                         placeholder="Escribe tu correo electronico..."
-                        />
+                        required/>
                     </label>
 
                     <label for="comentarios">Mensaje:
@@ -61,7 +61,7 @@
                         rows="10"
                         onkeypress="if(event.keyCode==13){enviarContacto()}"
                         placeholder="Escribe tu mensaje..."
-                        ></textarea>
+                        required></textarea>
                     </label>
 
                     <input 

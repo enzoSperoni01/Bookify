@@ -39,15 +39,15 @@
                     <p>Agrega los libros que desees!</p>
                     <form action="#">
                         <label for="titulo">¿Cual es el titulo del libro?
-                            <input type="text" id="nombreLibro" name="titulo">
+                            <input type="text" id="nombreLibro" name="titulo" required>
                         </label>
             
                         <label for="genero">¿De que genero es el libro?
-                            <input type="text" id="generoLibro" name="genero">
+                            <input type="text" id="generoLibro" name="genero" required>
                         </label>
             
                         <label for="paginas">¿Cuantas paginas tiene el libro?
-                            <input type="number" id="paginasLibro" onkeypress="if(event.keyCode==13){botonListo()}">
+                            <input type="number" id="paginasLibro" onkeypress="if(event.keyCode==13){botonListo()}" required>
                         </label>
         
                         <div class="buttons">
