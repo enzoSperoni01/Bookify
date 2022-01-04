@@ -33,7 +33,7 @@ function imprimirLibros() {
                 </li>`;
         i++;
     });
-    document.getElementById("biblioteca").innerHTML = html;
+    $("biblioteca")[0].innerHTML = html;
 }
 
 /******************************************************
@@ -42,7 +42,7 @@ en el atributo onclick y agrega un boton con la funcionalidad
 de eliminar el ID que el usuario elija
 ********************************************************/
 function eliminarLibro(num) {
-    let libroBorrar = document.getElementById(`libro-${num}`);
+    let libroBorrar = $(`libro-${num}`)[0];
     libroBorrar.remove();
     listadoLibros.splice(num, 1);
 }
