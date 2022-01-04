@@ -8,9 +8,9 @@ let listadoLibros = [];
 
 function botonListo() {
     // Obtenemos el valor de cada input del "index.html"
-    tituloLibro = document.getElementById("nombreLibro").value;
-    generoLibro = document.getElementById("generoLibro").value;
-    paginasLibro = document.getElementById("paginasLibro").value;
+    tituloLibro = $("#nombreLibro")[0].value;
+    generoLibro = $("#generoLibro")[0].value;
+    paginasLibro = $("#paginasLibro")[0].value;
 
     // Creamos una constante que contenga el objeto creado
     const nuevoLibro = new Libros(tituloLibro, generoLibro, paginasLibro);
