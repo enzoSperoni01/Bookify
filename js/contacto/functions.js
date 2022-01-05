@@ -1,9 +1,9 @@
 // Funcion que se encarga de trabajar los datos ingresados en los inputs 
 function enviarContacto() {
     // Tomamos los datos de los Inputs y del textarea
-    nombreApellido = $("nombreApellido")[0].value;
-    correoElectronico = $("correoElectronico")[0].value;
-    mensaje = $("comentarios")[0].value;
+    nombreApellido = $("#nombreApellido")[0].value;
+    correoElectronico = $("#correoElectronico")[0].value;
+    mensaje = $("#comentarios")[0].value;
 
     // Creamos un objeto con la clase "Contacto", y le pasamos los valores de los inputs
     contactoDeUsuario = new Contacto(nombreApellido, correoElectronico, mensaje);
@@ -13,7 +13,7 @@ function enviarContacto() {
     // Y el objeto contactoDeUsuario lo pasamos a un JSON pero en string 
     localStorage.setItem(`datos-${correoElectronico}`, JSON.stringify(contactoDeUsuario));
 
-    let boton = $("button-contact")[0];
+    let boton = $("#button-contact")[0];
 
     // Con esta funcion podemos realizar acciones en un tiempo determinado
     setTimeout(() => {
