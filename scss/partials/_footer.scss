@@ -1,6 +1,11 @@
 .footer {
     background-color: hsl(210, 30%, 20%);
+    padding: 3.4rem;
+    margin-top: 3rem;
     &__p {
-
+        color: hsl(210, 30%, 40%);
+        font-size: 2rem;
+        font-weight: $font-semiBold;
+        text-align: center;
     }
 }

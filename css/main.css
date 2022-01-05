@@ -223,4 +223,11 @@ html {
       color: #6699ff; }
 
 .footer {
-  background-color: #243342; }
+  background-color: #243342;
+  padding: 3.4rem;
+  margin-top: 3rem; }
+  .footer__p {
+    color: #476685;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center; }
