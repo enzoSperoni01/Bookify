@@ -19,4 +19,16 @@
         border: 0; 
         border-top: .2rem solid hsl(225, 40%, 20%);
     }
+    .newsletter-section {
+        display: grid;
+        place-items: center;
+        h3 {
+            font-size: 3rem;
+        }
+        .inputs-newsletter {
+            input {
+                
+            }
+        }
+    }
 }

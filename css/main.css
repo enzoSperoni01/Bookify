@@ -67,6 +67,12 @@ html {
   border: 0;
   border-top: 0.2rem solid #1f2947; }
 
+.main-index .newsletter-section {
+  display: grid;
+  place-items: center; }
+  .main-index .newsletter-section h3 {
+    font-size: 3rem; }
+
 .main-books {
   display: grid;
   width: 100%;
