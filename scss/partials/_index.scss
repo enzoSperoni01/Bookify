@@ -17,17 +17,49 @@
     hr {
         margin: .5rem 25rem;
         border: 0; 
-        border-top: .2rem solid hsl(225, 40%, 20%);
+        border-top: .2rem solid hsl(225, 40%, 40%);
+        border-radius: 1rem;
     }
     .newsletter-section {
+        margin-top: 5rem;
         display: grid;
         place-items: center;
         h3 {
-            font-size: 3rem;
+            font-size: 3.3rem;
         }
         .inputs-newsletter {
-            input {
-                
+            margin: 5rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            .email-input {
+                padding: 1rem 15rem 1rem 1rem;
+                border: none;
+                border-radius: .3rem;
+                background-color: hsl(225, 40%, 20%);
+                color: white;
+                transition: all 250ms;
+            }
+            .email-input::placeholder {
+                color: hsl(220, 100%, 80%);
+            }
+            .email-input:focus {
+                outline: 3px solid hsl(220, 100%, 60%);
+            }
+
+            .btn-input {
+                cursor: pointer;
+                padding: 1rem 5rem;
+                border-radius: .3rem;
+                border: none;
+                background-color: hsl(220, 100%, 50%);
+                color: white;
+                transition: all 220ms;
+            }
+            .btn-input:hover {
+                background-color: hsl(220, 100%, 30%);
+                outline: 3px solid hsl(220, 100%, 60%);;
             }
         }
     }
