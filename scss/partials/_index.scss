@@ -1,0 +1,22 @@
+.main-index {
+    .hero-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 7rem;
+        h1 {
+            font-size: 7.5rem;
+            span {
+                font-weight: $font-light;
+            }
+        }
+        img {
+            width: 40%;
+        }
+    }
+    hr {
+        margin: .5rem 25rem;
+        border: 0; 
+        border-top: .2rem solid hsl(225, 40%, 20%);
+    }
+}

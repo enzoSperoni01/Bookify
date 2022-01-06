@@ -50,6 +50,23 @@ html {
         .header__nav__list li a:hover {
           color: #cccccc; }
 
+.main-index .hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7rem; }
+  .main-index .hero-section h1 {
+    font-size: 7.5rem; }
+    .main-index .hero-section h1 span {
+      font-weight: 300; }
+  .main-index .hero-section img {
+    width: 40%; }
+
+.main-index hr {
+  margin: .5rem 25rem;
+  border: 0;
+  border-top: 0.2rem solid #1f2947; }
+
 .main-books {
   display: grid;
   width: 100%;
