@@ -40,20 +40,20 @@
 
         <main class="main-index">
             <div class="hero-section">
-                <h1>
+                <h1 data-aos="fade-right" data-aos-duration="1500">
                     Bienvenido<br> a Book<span>ify</span>
                 </h1>
-                <img src="./assets/books-index.svg" alt="Imagen Leyendo Libros">
+                <img src="./assets/books-index.svg" alt="Imagen Leyendo Libros"  data-aos="fade-left" data-aos-duration="1500">
             </div>
             <hr>
 
             <div class="newsletter-section">
                 <h3>¿Quieres recibir actualizaciones del sitio?</h3>
 
-                <div class="inputs-newsletter">
-                    <input type="email" id="email-newsletter" class="email-input" placeholder="Escribe tu correo...">
+                <form action="#" class="inputs-newsletter">
+                    <input type="email" id="email-newsletter" class="email-input" placeholder="Escribe tu correo..." required>
                     <input type="button" id="btn-newsletter" class="btn-input" value="Enviar" onclick="enviarModal()">
-                </div>
+                </form>
             </div>
         </main>
 
