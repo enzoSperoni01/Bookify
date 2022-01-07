@@ -29,11 +29,12 @@ function enviarContacto() {
             }, 2500);
         }, 500);
     } else {
+        // Mejorar y dar mas estilo
         $("#button-contact").click(() => {
-            $(".p-alert").fadeIn();
+            $(".p-alert").show();
             setTimeout(() => {
-                $(".p-alert").fadeOut();
-            }, 3500);
+                $(".p-alert").hide();
+            }, 3000);
         })
     }
 
