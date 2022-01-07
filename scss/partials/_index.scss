@@ -43,6 +43,8 @@
             }
             .email-input::placeholder {
                 color: hsl(220, 100%, 80%);
+                font-weight: $font-regular;
+                letter-spacing: .1rem;
             }
             .email-input:focus {
                 outline: 3px solid hsl(220, 100%, 60%);
@@ -55,6 +57,7 @@
                 border: none;
                 background-color: hsl(220, 100%, 50%);
                 color: white;
+                font-weight: $font-semiBold;
                 transition: all 220ms;
             }
             .btn-input:hover {

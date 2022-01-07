@@ -88,7 +88,9 @@ html {
       color: white;
       transition: all 250ms; }
     .main-index .newsletter-section .inputs-newsletter .email-input::placeholder {
-      color: #99bbff; }
+      color: #99bbff;
+      font-weight: 400;
+      letter-spacing: .1rem; }
     .main-index .newsletter-section .inputs-newsletter .email-input:focus {
       outline: 3px solid #3377ff; }
     .main-index .newsletter-section .inputs-newsletter .btn-input {
@@ -98,6 +100,7 @@ html {
       border: none;
       background-color: #0055ff;
       color: white;
+      font-weight: 600;
       transition: all 220ms; }
     .main-index .newsletter-section .inputs-newsletter .btn-input:hover {
       background-color: #003399;
