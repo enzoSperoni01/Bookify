@@ -6,6 +6,15 @@ html {
     background-color: #2f3e6a;
     color: white; }
 
+::-webkit-scrollbar {
+  width: 1rem; }
+
+::-webkit-scrollbar-track {
+  background: #243342; }
+
+::-webkit-scrollbar-thumb {
+  background: #005fff; }
+
 * {
   padding: 0;
   margin: 0;
@@ -89,7 +98,7 @@ html {
       transition: all 250ms; }
     .main-index .newsletter-section .inputs-newsletter .email-input::placeholder {
       color: #99bbff;
-      font-weight: 400;
+      font-weight: 600;
       letter-spacing: .1rem; }
     .main-index .newsletter-section .inputs-newsletter .email-input:focus {
       outline: 3px solid #3377ff; }

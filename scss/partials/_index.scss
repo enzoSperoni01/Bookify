@@ -43,7 +43,7 @@
             }
             .email-input::placeholder {
                 color: hsl(220, 100%, 80%);
-                font-weight: $font-regular;
+                font-weight: $font-semiBold;
                 letter-spacing: .1rem;
             }
             .email-input:focus {
