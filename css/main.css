@@ -263,6 +263,8 @@ html {
       text-transform: uppercase; }
     .main__form__div #button-contact:hover {
       background-color: #004f99; }
+    .main__form__div .p-alert {
+      display: none; }
 
 .main-deal {
   display: flex;
