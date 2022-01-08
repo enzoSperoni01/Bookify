@@ -21,9 +21,7 @@ function enviarContacto() {
         setTimeout(() => {
             boton.value = "Enviando...";
             setTimeout(() => {
-                $("#button-contact").css({
-                    "background-color": "green"
-                })
+                $("#button-contact").css( {"background-color": "green"} );
                 boton.value = "Enviado!";
                 setTimeout(() => {
                     // Con este metodo podemos dirigir al usuario, como un link de HTML(<a href=""></a>), pero en JS
@@ -33,11 +31,10 @@ function enviarContacto() {
         }, 500);
     } else {
         $("#button-contact").click(() => {
-            $(".p-alert").show();
+            $(".p-alert").css( {"visibility": "visible"} );
             setTimeout(() => {
-                $(".p-alert").hide();
+                $(".p-alert").css( {"visibility": "hidden"} );
             }, 3000);
         })
     }
-
 }
