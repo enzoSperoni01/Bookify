@@ -12,6 +12,7 @@
         &__div {
             display: flex;
             flex-direction: column;
+            margin-bottom: 5rem;
 
             label {
                 font-size: 1.8rem;
@@ -82,7 +83,7 @@
             }
 
             .p-alert {
-                visibility: hidden;
+                display: none;
                 background-color: rgba(255, 0, 0, 0.6);
                 text-align: center;
                 text-transform: uppercase;

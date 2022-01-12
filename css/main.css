@@ -217,7 +217,8 @@ html {
     margin-bottom: 2.5rem; }
   .main__form__div {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 5rem; }
     .main__form__div label {
       font-size: 1.8rem;
       font-weight: 600;
@@ -273,7 +274,7 @@ html {
     .main__form__div #button-contact:hover {
       background-color: #004f99; }
     .main__form__div .p-alert {
-      visibility: hidden;
+      display: none;
       background-color: rgba(255, 0, 0, 0.6);
       text-align: center;
       text-transform: uppercase;

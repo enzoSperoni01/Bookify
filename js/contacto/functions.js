@@ -21,19 +21,22 @@ function enviarContacto() {
         setTimeout(() => {
             boton.value = "Enviando...";
             setTimeout(() => {
-                $("#button-contact").css( {"background-color": "green"} );
+                $("#button-contact").fadeOut(1000, () => {
+                                        $("#button-contact").fadeIn()
+                                                            .css( {"background-color": "green"} );
+                                    })
                 boton.value = "Enviado!";
                 setTimeout(() => {
                     // Con este metodo podemos dirigir al usuario, como un link de HTML(<a href=""></a>), pero en JS
                     window.location.href = "../pages/contactoHecho.html";
-                }, 1700);
+                }, 2600);
             }, 2500);
         }, 500);
     } else {
         $("#button-contact").click(() => {
-            $(".p-alert").css( {"visibility": "visible"} );
+            $(".p-alert").fadeIn();
             setTimeout(() => {
-                $(".p-alert").css( {"visibility": "hidden"} );
+                $(".p-alert").fadeOut();
             }, 3000);
         })
     }
