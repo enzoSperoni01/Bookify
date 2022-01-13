@@ -36,43 +36,43 @@ const listaDeLibros = [
     },
     {
         id: 6,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Astrofisica para gente apurada",
+        autor: "Neil deGrasse Tyson",
+        genero: "Divulgacion",
         img: ''
     },
     {
         id: 7,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Breve historia del Tiempo",
+        autor: "Stephen Hawking",
+        genero: "Divulgacion",
         img: ''
     },
     {
         id: 8,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "¿Para que sirve la filosofia?",
+        autor: "Dario Sztajnszrajber",
+        genero: "Filosofia",
         img: ''
     },
     {
         id: 9,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Filosofia en 11 frases",
+        autor: "Dario Sztajnszrajber",
+        genero: "Filosofia",
         img: ''
     },
     {
         id: 10,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "1984",
+        autor: "George Orwell",
+        genero: "Ciencia ficción",
         img: ''
     },
     {
         id: 11,
-        titulo: "Carrie",
-        autor: "Stephen King",
+        titulo: "Valle de la calma",
+        autor: "Angel David Revilla",
         genero: "Terror",
         img: ''
     },
