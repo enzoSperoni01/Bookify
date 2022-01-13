@@ -1,5 +1,6 @@
 // Variables & base_
 @import "./utilities/variables";
+@import "./utilities/spinner";
 @import "./base/html";
 @import "./base/reset";
 
@@ -7,5 +8,6 @@
 @import "./partials/navbar";
 @import "./partials/index";
 @import "./partials/books";
+@import "./partials/find-book";
 @import "./partials/contacto";
 @import "./partials/footer";
