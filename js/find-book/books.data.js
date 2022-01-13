@@ -72,71 +72,71 @@ const listaDeLibros = [
     {
         id: 11,
         titulo: "Valle de la calma",
-        autor: "Angel David Revilla",
+        autor: "Dross",
         genero: "Terror",
         img: ''
     },
     {
         id: 12,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Escape",
+        autor: "Dross",
+        genero: "Criminal",
         img: ''
     },
     {
         id: 13,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Historias de divan",
+        autor: "Gabriel Rolon",
+        genero: "Drama",
         img: ''
     },
     {
         id: 14,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Historias inconscientes",
+        autor: "Gabriel Rolon",
+        genero: "Ficcion",
         img: ''
     },
     {
         id: 15,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "La voz ausente",
+        autor: "Gabriel Rolon",
+        genero: "Ficcion",
         img: ''
     },
     {
         id: 16,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "El Hobbit",
+        autor: "Tolkien",
+        genero: "Fantasia",
         img: ''
     },
     {
         id: 17,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Rebelión en la granja",
+        autor: "George Orwell",
+        genero: "Ficción",
         img: ''
     },
     {
         id: 18,
-        titulo: "Carrie",
+        titulo: "La Cupula",
         autor: "Stephen King",
-        genero: "Terror",
+        genero: "Ciencia ficcion",
         img: ''
     },
     {
         id: 19,
-        titulo: "Carrie",
+        titulo: "Mr. Mercedes",
         autor: "Stephen King",
-        genero: "Terror",
+        genero: "Criminal",
         img: ''
     },
     {
         id: 20,
-        titulo: "Carrie",
-        autor: "Stephen King",
-        genero: "Terror",
+        titulo: "Arsene Lupin",
+        autor: "Maurice Leblanc",
+        genero: "Ficcion",
         img: ''
     }
 ];
