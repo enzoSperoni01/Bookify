@@ -39,104 +39,104 @@ const listaDeLibros = [
         titulo: "Astrofisica para gente apurada",
         autor: "Neil deGrasse Tyson",
         genero: "Divulgacion",
-        slug: ''
+        slug: 'astrofisica'
     },
     {
         id: 7,
         titulo: "Breve historia del Tiempo",
         autor: "Stephen Hawking",
         genero: "Divulgacion",
-        slug: ''
+        slug: 'breveHistoriaDelTiempo'
     },
     {
         id: 8,
         titulo: "¿Para que sirve la filosofia?",
         autor: "Dario Sztajnszrajber",
         genero: "Filosofia",
-        slug: ''
+        slug: 'paraQueSirveLaFilosofia'
     },
     {
         id: 9,
         titulo: "Filosofia en 11 frases",
         autor: "Dario Sztajnszrajber",
         genero: "Filosofia",
-        slug: ''
+        slug: 'filosofiaEn11frases'
     },
     {
         id: 10,
         titulo: "1984",
         autor: "George Orwell",
         genero: "Ciencia ficción",
-        slug: ''
+        slug: '1984-img'
     },
     {
         id: 11,
         titulo: "Valle de la calma",
         autor: "Dross",
         genero: "Terror",
-        slug: ''
+        slug: 'valleDeLaCalma'
     },
     {
         id: 12,
         titulo: "Escape",
         autor: "Dross",
         genero: "Criminal",
-        slug: ''
+        slug: 'escapeDross'
     },
     {
         id: 13,
         titulo: "Historias de divan",
         autor: "Gabriel Rolon",
         genero: "Drama",
-        slug: ''
+        slug: 'historiasDeDivan'
     },
     {
         id: 14,
         titulo: "Historias inconscientes",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        slug: ''
+        slug: 'historiasInconscuentes'
     },
     {
         id: 15,
         titulo: "La voz ausente",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        slug: ''
+        slug: 'laVozAusente'
     },
     {
         id: 16,
         titulo: "El Hobbit",
         autor: "Tolkien",
         genero: "Fantasia",
-        slug: ''
+        slug: 'elHobbit'
     },
     {
         id: 17,
         titulo: "Rebelión en la granja",
         autor: "George Orwell",
         genero: "Ficción",
-        slug: ''
+        slug: 'rebelionEnLaGranja'
     },
     {
         id: 18,
         titulo: "La Cupula",
         autor: "Stephen King",
         genero: "Ciencia ficcion",
-        slug: ''
+        slug: 'laCupula'
     },
     {
         id: 19,
         titulo: "Mr. Mercedes",
         autor: "Stephen King",
         genero: "Criminal",
-        slug: ''
+        slug: 'mrMercedes'
     },
     {
         id: 20,
         titulo: "Arsene Lupin",
         autor: "Maurice Leblanc",
         genero: "Ficcion",
-        slug: ''
+        slug: 'lupin'
     }
 ];
