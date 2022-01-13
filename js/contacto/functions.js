@@ -20,15 +20,11 @@ function enviarContacto() {
         // Con esta funcion podemos realizar acciones en un tiempo determinado
         setTimeout(() => {
             $("#button-contact").hide();
-            $(".spinner").show()
-                        .css({
-                            "display": "flex",
-                            "justify-content": "center",
-                            "align-items": "center"
-                        })
+            $(".spinner").show();
             setTimeout(() => {
                 $(".spinner").hide();
-                $("#button-contact").show();
+                $("#button-contact").show()
+                                    .css({ "background-color": "green" })
                 boton.value = "Enviado!";
                 setTimeout(() => {
                     // Con este metodo podemos dirigir al usuario, como un link de HTML(<a href=""></a>), pero en JS
