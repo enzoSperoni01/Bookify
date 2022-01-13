@@ -4,139 +4,139 @@ const listaDeLibros = [
         titulo: "Carrie",
         autor: "Stephen King",
         genero: "Terror",
-        img: '' /* Agregar imagenes de C/U */
+        slug: 'carrie'
     },
     {
         id: 2,
         titulo: "El Resplandor",
         autor: "Stephen King",
         genero: "Terror",
-        img: ''
+        slug: 'elResplandor'
     },
     {
         id: 3,
         titulo: "El Señor de los Anillos: La comunidad del anillo",
         autor: "Tolkien",
         genero: "Fantasia",
-        img: ''
+        slug: 'elSeñorDeLosAnillos-I'
     },
     {
         id: 4,
         titulo: "El Señor de los Anillos: Las dos torres",
         autor: "Tolkien",
         genero: "Fantasia",
-        img: ''
+        slug: 'elSeñorDeLosAnillos-II'
     },
     {
         id: 5,
         titulo: "El Señor de los Anillos: El retorno del rey",
         autor: "Tolkien",
         genero: "Fantasia",
-        img: ''
+        slug: 'elSeñorDeLosAnillos-III'
     },
     {
         id: 6,
         titulo: "Astrofisica para gente apurada",
         autor: "Neil deGrasse Tyson",
         genero: "Divulgacion",
-        img: ''
+        slug: ''
     },
     {
         id: 7,
         titulo: "Breve historia del Tiempo",
         autor: "Stephen Hawking",
         genero: "Divulgacion",
-        img: ''
+        slug: ''
     },
     {
         id: 8,
         titulo: "¿Para que sirve la filosofia?",
         autor: "Dario Sztajnszrajber",
         genero: "Filosofia",
-        img: ''
+        slug: ''
     },
     {
         id: 9,
         titulo: "Filosofia en 11 frases",
         autor: "Dario Sztajnszrajber",
         genero: "Filosofia",
-        img: ''
+        slug: ''
     },
     {
         id: 10,
         titulo: "1984",
         autor: "George Orwell",
         genero: "Ciencia ficción",
-        img: ''
+        slug: ''
     },
     {
         id: 11,
         titulo: "Valle de la calma",
         autor: "Dross",
         genero: "Terror",
-        img: ''
+        slug: ''
     },
     {
         id: 12,
         titulo: "Escape",
         autor: "Dross",
         genero: "Criminal",
-        img: ''
+        slug: ''
     },
     {
         id: 13,
         titulo: "Historias de divan",
         autor: "Gabriel Rolon",
         genero: "Drama",
-        img: ''
+        slug: ''
     },
     {
         id: 14,
         titulo: "Historias inconscientes",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        img: ''
+        slug: ''
     },
     {
         id: 15,
         titulo: "La voz ausente",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        img: ''
+        slug: ''
     },
     {
         id: 16,
         titulo: "El Hobbit",
         autor: "Tolkien",
         genero: "Fantasia",
-        img: ''
+        slug: ''
     },
     {
         id: 17,
         titulo: "Rebelión en la granja",
         autor: "George Orwell",
         genero: "Ficción",
-        img: ''
+        slug: ''
     },
     {
         id: 18,
         titulo: "La Cupula",
         autor: "Stephen King",
         genero: "Ciencia ficcion",
-        img: ''
+        slug: ''
     },
     {
         id: 19,
         titulo: "Mr. Mercedes",
         autor: "Stephen King",
         genero: "Criminal",
-        img: ''
+        slug: ''
     },
     {
         id: 20,
         titulo: "Arsene Lupin",
         autor: "Maurice Leblanc",
         genero: "Ficcion",
-        img: ''
+        slug: ''
     }
 ];
