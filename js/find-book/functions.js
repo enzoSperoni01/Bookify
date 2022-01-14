@@ -4,7 +4,7 @@ function cargarLibros() {
 	listaDeLibros.forEach((prod) => {
 		container.append(
 			`<div id="${prod.id}">
-                <img src="../assets/img-books/${prod.slug}.jpg" alt="${prod.titulo}" />
+                <img src="../assets/img-books/${prod.img}.jpg" alt="${prod.titulo}" />
             </div>`
 		);
 	});
