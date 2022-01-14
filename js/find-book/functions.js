@@ -1,11 +1,12 @@
 function cargarLibros() {
+	listaDeLibros.map((libro) => {
+		imprimirLibros(libro);
+	});
+}
+function imprimirLibros(book) {
 	const container = $("#container");
 
-	listaDeLibros.forEach((prod) => {
-		container.append(
-			`<div id="${prod.id}">
-                <img src="../assets/img-books/${prod.img}.jpg" alt="${prod.titulo}" />
-            </div>`
-		);
-	});
+	container.append(`<div id="${book.id}">
+						<img src="../assets/img-books/${book.img}.jpg" alt="${book.titulo}" />
+					</div>`);
 }
