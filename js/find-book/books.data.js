@@ -15,21 +15,21 @@ const listaDeLibros = [
     },
     {
         id: 3,
-        titulo: "El Señor de los Anillos: La comunidad del anillo",
+        titulo: "El Señor de los Anillos:<br> La comunidad del anillo",
         autor: "Tolkien",
         genero: "Fantasia",
         img: 'elSeñorDeLosAnillos-I'
     },
     {
         id: 4,
-        titulo: "El Señor de los Anillos: Las dos torres",
+        titulo: "El Señor de los Anillos:<br> Las dos torres",
         autor: "Tolkien",
         genero: "Fantasia",
         img: 'elSeñorDeLosAnillos-II'
     },
     {
         id: 5,
-        titulo: "El Señor de los Anillos: El retorno del rey",
+        titulo: "El Señor de los Anillos:<br> El retorno del rey",
         autor: "Tolkien",
         genero: "Fantasia",
         img: 'elSeñorDeLosAnillos-III'
@@ -95,7 +95,7 @@ const listaDeLibros = [
         titulo: "Historias inconscientes",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        img: 'historiasInconscuentes'
+        img: 'historiasInconscientes'
     },
     {
         id: 15,

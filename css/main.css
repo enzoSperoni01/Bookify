@@ -226,6 +226,33 @@ html {
           .main-books div .section__div__list__item__btn:hover {
             background-color: #0073e6; }
 
+.main_find-book #libros h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 3.2rem; }
+
+.main_find-book #libros #container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2.2rem;
+  gap: 5rem; }
+  .main_find-book #libros #container .div-book {
+    display: flex; }
+    .main_find-book #libros #container .div-book img {
+      width: 30%;
+      border-radius: .5rem; }
+    .main_find-book #libros #container .div-book .info-book {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: .3rem;
+      margin-left: 1rem;
+      font-size: 1.4rem; }
+      .main_find-book #libros #container .div-book .info-book .writter-book {
+        color: #6699ff; }
+      .main_find-book #libros #container .div-book .info-book p {
+        font-weight: 600; }
+
 .main {
   display: grid;
   width: 100%;

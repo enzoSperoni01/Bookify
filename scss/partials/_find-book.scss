@@ -1,0 +1,39 @@
+.main_find-book {
+    #libros {
+        h1 {
+            font-size: 3.2rem;
+            text-align: center;
+            margin: 3.2rem;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 2.2rem;
+            gap: 5rem;
+
+            .div-book {
+                display: flex;
+                img {
+                    width: 30%;
+                    border-radius: .5rem;
+                }
+                .info-book {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: .3rem;
+                    margin-left: 1rem;
+                    font-size: 1.4rem;
+
+                    .writter-book {
+                        color: hsl(220, 100%, 70%);
+                    }
+
+                    p {
+                        font-weight: $font-semiBold;
+                    }
+                }
+            }
+        }
+    }
+}
