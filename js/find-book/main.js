@@ -1,4 +1,6 @@
-$(document).ready(() => {
+// (document).ready();
+// Lo mismo que aca abajo
+$(() => {
 	cargarLibros();
 });
 
