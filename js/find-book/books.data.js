@@ -4,139 +4,139 @@ const listaDeLibros = [
         titulo: "Carrie",
         autor: "Stephen King",
         genero: "Terror",
-        slug: 'carrie'
+        img: 'carrie'
     },
     {
         id: 2,
         titulo: "El Resplandor",
         autor: "Stephen King",
         genero: "Terror",
-        slug: 'elResplandor'
+        img: 'elResplandor'
     },
     {
         id: 3,
-        titulo: "El Señor de los Anillos: La comunidad del anillo",
+        titulo: "El Señor de los Anillos:<br> La comunidad del anillo",
         autor: "Tolkien",
         genero: "Fantasia",
-        slug: 'elSeñorDeLosAnillos-I'
+        img: 'elSeñorDeLosAnillos-I'
     },
     {
         id: 4,
-        titulo: "El Señor de los Anillos: Las dos torres",
+        titulo: "El Señor de los Anillos:<br> Las dos torres",
         autor: "Tolkien",
         genero: "Fantasia",
-        slug: 'elSeñorDeLosAnillos-II'
+        img: 'elSeñorDeLosAnillos-II'
     },
     {
         id: 5,
-        titulo: "El Señor de los Anillos: El retorno del rey",
+        titulo: "El Señor de los Anillos:<br> El retorno del rey",
         autor: "Tolkien",
         genero: "Fantasia",
-        slug: 'elSeñorDeLosAnillos-III'
+        img: 'elSeñorDeLosAnillos-III'
     },
     {
         id: 6,
         titulo: "Astrofisica para gente apurada",
         autor: "Neil deGrasse Tyson",
         genero: "Divulgacion",
-        slug: ''
+        img: 'astrofisica'
     },
     {
         id: 7,
         titulo: "Breve historia del Tiempo",
         autor: "Stephen Hawking",
         genero: "Divulgacion",
-        slug: ''
+        img: 'breveHistoriaDelTiempo'
     },
     {
         id: 8,
         titulo: "¿Para que sirve la filosofia?",
         autor: "Dario Sztajnszrajber",
         genero: "Filosofia",
-        slug: ''
+        img: 'paraQueSirveLaFilosofia'
     },
     {
         id: 9,
         titulo: "Filosofia en 11 frases",
         autor: "Dario Sztajnszrajber",
         genero: "Filosofia",
-        slug: ''
+        img: 'filosofiaEn11frases'
     },
     {
         id: 10,
         titulo: "1984",
         autor: "George Orwell",
         genero: "Ciencia ficción",
-        slug: ''
+        img: '1984-img'
     },
     {
         id: 11,
         titulo: "Valle de la calma",
         autor: "Dross",
         genero: "Terror",
-        slug: ''
+        img: 'valleDeLaCalma'
     },
     {
         id: 12,
         titulo: "Escape",
         autor: "Dross",
         genero: "Criminal",
-        slug: ''
+        img: 'escapeDross'
     },
     {
         id: 13,
         titulo: "Historias de divan",
         autor: "Gabriel Rolon",
         genero: "Drama",
-        slug: ''
+        img: 'historiasDeDivan'
     },
     {
         id: 14,
         titulo: "Historias inconscientes",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        slug: ''
+        img: 'historiasInconscientes'
     },
     {
         id: 15,
         titulo: "La voz ausente",
         autor: "Gabriel Rolon",
         genero: "Ficcion",
-        slug: ''
+        img: 'laVozAusente'
     },
     {
         id: 16,
         titulo: "El Hobbit",
         autor: "Tolkien",
         genero: "Fantasia",
-        slug: ''
+        img: 'elHobbit'
     },
     {
         id: 17,
         titulo: "Rebelión en la granja",
         autor: "George Orwell",
         genero: "Ficción",
-        slug: ''
+        img: 'rebelionEnLaGranja'
     },
     {
         id: 18,
         titulo: "La Cupula",
         autor: "Stephen King",
         genero: "Ciencia ficcion",
-        slug: ''
+        img: 'laCupula'
     },
     {
         id: 19,
         titulo: "Mr. Mercedes",
         autor: "Stephen King",
         genero: "Criminal",
-        slug: ''
+        img: 'mrMercedes'
     },
     {
         id: 20,
         titulo: "Arsene Lupin",
         autor: "Maurice Leblanc",
         genero: "Ficcion",
-        slug: ''
+        img: 'lupin'
     }
 ];

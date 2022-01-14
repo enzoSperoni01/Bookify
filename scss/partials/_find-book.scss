@@ -1,0 +1,52 @@
+.main_find-book {
+    #libros {
+        h1 {
+            font-size: 3.2rem;
+            text-align: center;
+            margin: 3.2rem;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 2.2rem;
+            gap: 5rem;
+
+            .div-book {
+                display: flex;
+                cursor: pointer;
+                padding: 2.4rem;
+                border-radius: .8rem;
+                position: relative;
+                bottom: 0;
+
+                transition: all 220ms ease;
+                img {
+                    width: 30%;
+                    border-radius: .5rem;
+                }
+                .info-book {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-left: 1.4rem;
+                    font-size: 1.4rem;
+
+                    .writer-gender {
+                        display: flex;
+                        flex-direction: column;
+                        .writter-book {
+                            color: hsl(220, 100%, 80%);
+                        }
+                        p {
+                            font-weight: $font-semiBold;
+                        }
+                    }
+                }
+            }
+            .div-book:hover {
+                background-color: rgba(40, 111, 255, .3);
+                bottom: 1rem;
+            }
+        }
+    }
+}
