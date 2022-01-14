@@ -237,21 +237,32 @@ html {
   margin: 2.2rem;
   gap: 5rem; }
   .main_find-book #libros #container .div-book {
-    display: flex; }
+    display: flex;
+    cursor: pointer;
+    padding: 2.4rem;
+    border-radius: .8rem;
+    position: relative;
+    bottom: 0;
+    transition: all 220ms ease; }
     .main_find-book #libros #container .div-book img {
       width: 30%;
       border-radius: .5rem; }
     .main_find-book #libros #container .div-book .info-book {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      gap: .3rem;
-      margin-left: 1rem;
+      justify-content: space-around;
+      margin-left: 1.4rem;
       font-size: 1.4rem; }
-      .main_find-book #libros #container .div-book .info-book .writter-book {
-        color: #6699ff; }
-      .main_find-book #libros #container .div-book .info-book p {
-        font-weight: 600; }
+      .main_find-book #libros #container .div-book .info-book .writer-gender {
+        display: flex;
+        flex-direction: column; }
+        .main_find-book #libros #container .div-book .info-book .writer-gender .writter-book {
+          color: #99bbff; }
+        .main_find-book #libros #container .div-book .info-book .writer-gender p {
+          font-weight: 600; }
+  .main_find-book #libros #container .div-book:hover {
+    background-color: rgba(40, 111, 255, 0.3);
+    bottom: 1rem; }
 
 .main {
   display: grid;
