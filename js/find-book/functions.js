@@ -1,5 +1,5 @@
 function cargarLibros() {
-	listaDeLibros.map((libro) => {
+	listaDeLibros.map( libro => {
 		imprimirLibros(libro);
 	});
 }

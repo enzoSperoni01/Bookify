@@ -1,23 +1,15 @@
-<<<<<<< HEAD
-#div-container {
-    .spinner {
-=======
 #div-contact {
     display: flex;
     justify-content: center;
     align-items: center;
     .spinner {
         display: none;
->>>>>>> find-book
         border: 4px solid rgba(0, 0, 0, .1);
         width: 3.6rem;
         height: 3.6rem;
         border-radius: 50%;
-<<<<<<< HEAD
-=======
         margin: 2.4rem;
->>>>>>> find-book
-        border-left-color: hsl(209, 100%, 60%);
+        border-left-color: hsl(209, 100%, 55%);
 
         animation: spin 1s ease infinite;
     }
