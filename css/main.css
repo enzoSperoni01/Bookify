@@ -46,7 +46,8 @@ html {
     font-size: 1.7rem; }
   .modal table {
     margin: 1.4rem .2rem 1.4rem .2rem;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    width: 100%; }
     .modal table #carrito tr .header {
       color: black;
       font-size: 1.5rem;
@@ -280,10 +281,11 @@ html {
     color: white;
     padding: 1.2rem;
     border-radius: .4rem;
-    outline: 2px solid #6e6e6e;
+    background-color: #bfbfbf;
+    outline: 3px solid #6e6e6e;
     transition: all 150ms ease-in-out; }
   .main_find-book #libros .carrito-container a img:hover {
-    background-color: #e6e6e6;
+    background-color: white;
     box-shadow: 0px 0px 25px 0px white; }
 
 .main_find-book #libros #container {
@@ -297,10 +299,10 @@ html {
     border-radius: .8rem;
     position: relative;
     bottom: 0;
-    transition: all 220ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
     .main_find-book #libros #container .div-book img {
       width: 30%;
-      border-radius: .5rem; }
+      border-radius: .4rem; }
     .main_find-book #libros #container .div-book .align-items {
       display: flex;
       flex-direction: column;
