@@ -1,7 +1,7 @@
-// (document).ready();
-// Lo mismo que aca abajo
 $(() => {
-	cargarLibros();
+	recibirLibros();
+	imprimirLibros(carrito);
 });
 
-let listado = [];
+let carrito = JSON.parse(localStorage.getItem("carrito-cliente")) || [];
+let libros;

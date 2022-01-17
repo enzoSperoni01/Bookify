@@ -40,6 +40,46 @@ html {
   margin: 0;
   box-sizing: border-box; }
 
+.modal {
+  color: black; }
+  .modal h3 {
+    font-size: 1.7rem; }
+  .modal table {
+    margin: 1.4rem .2rem 1.4rem .2rem;
+    font-size: 1.4rem; }
+    .modal table #carrito tr .header {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 600; }
+    .modal table #carrito tr .header-price {
+      font-weight: 600; }
+  .modal button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: #ff4d4d;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    border: none;
+    margin-left: 3.5rem;
+    transition: all 100ms ease-in-out; }
+  .modal button:hover {
+    background-color: #e60000; }
+  .modal button:active {
+    transition: all 0.15s ease-in-out;
+    transform: scale(0.95); }
+  .modal .total {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700; }
+  .modal .comprarLibros {
+    background-color: #2bff00;
+    font-weight: 700;
+    margin: 0;
+    transition: all 150ms ease; }
+  .modal .comprarLibros:hover {
+    background-color: #1a9900; }
+
 .header {
   background: #0e3f70;
   background: linear-gradient(90deg, #135292 0%, #005fff 100%);
@@ -226,10 +266,25 @@ html {
           .main-books div .section__div__list__item__btn:hover {
             background-color: #0073e6; }
 
-.main_find-book #libros h1 {
-  font-size: 3.2rem;
-  text-align: center;
-  margin: 3.2rem; }
+.main_find-book #libros .carrito-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main_find-book #libros .carrito-container h1 {
+    font-size: 3.2rem;
+    text-align: left;
+    margin: 5rem 0 1rem 5rem; }
+  .main_find-book #libros .carrito-container a img {
+    width: 6rem;
+    margin: 5rem 5rem 1rem 0;
+    color: white;
+    padding: 1.2rem;
+    border-radius: .4rem;
+    outline: 2px solid #6e6e6e;
+    transition: all 150ms ease-in-out; }
+  .main_find-book #libros .carrito-container a img:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0px 0px 25px 0px white; }
 
 .main_find-book #libros #container {
   display: grid;
@@ -238,28 +293,41 @@ html {
   gap: 5rem; }
   .main_find-book #libros #container .div-book {
     display: flex;
-    cursor: pointer;
     padding: 2.4rem;
     border-radius: .8rem;
     position: relative;
     bottom: 0;
-    transition: all 220ms ease; }
+    transition: all 220ms ease-in-out; }
     .main_find-book #libros #container .div-book img {
       width: 30%;
       border-radius: .5rem; }
-    .main_find-book #libros #container .div-book .info-book {
+    .main_find-book #libros #container .div-book .align-items {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      margin-left: 1.4rem;
-      font-size: 1.4rem; }
-      .main_find-book #libros #container .div-book .info-book .writer-gender {
+      margin-left: 2rem;
+      justify-content: space-between; }
+      .main_find-book #libros #container .div-book .align-items .title-book {
+        font-size: 1.7rem; }
+      .main_find-book #libros #container .div-book .align-items .writer-gender {
         display: flex;
-        flex-direction: column; }
-        .main_find-book #libros #container .div-book .info-book .writer-gender .writter-book {
+        flex-direction: column;
+        justify-content: center; }
+        .main_find-book #libros #container .div-book .align-items .writer-gender .writter-book {
+          font-size: 1.5rem;
           color: #99bbff; }
-        .main_find-book #libros #container .div-book .info-book .writer-gender p {
+        .main_find-book #libros #container .div-book .align-items .writer-gender p {
+          font-size: 1.4rem;
           font-weight: 600; }
+      .main_find-book #libros #container .div-book .align-items .btn-delete {
+        border: none;
+        padding: .5rem 1.5rem;
+        background-color: rgba(40, 111, 255, 0.5);
+        color: white;
+        cursor: pointer; }
+      .main_find-book #libros #container .div-book .align-items .btn-delete:disabled {
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(40, 110, 255, 0.3);
+        cursor: not-allowed; }
   .main_find-book #libros #container .div-book:hover {
     background-color: rgba(40, 111, 255, 0.3);
     bottom: 1rem; }

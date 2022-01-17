@@ -1,9 +1,31 @@
 .main_find-book {
     #libros {
-        h1 {
-            font-size: 3.2rem;
-            text-align: center;
-            margin: 3.2rem;
+        .carrito-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                font-size: 3.2rem;
+                text-align: left;
+                margin: 5rem 0 1rem 5rem;
+            }
+
+            a {
+                img {
+                    width: 6rem;
+                    margin: 5rem 5rem 1rem 0;
+                    color: white;
+                    padding: 1.2rem;
+                    border-radius: .4rem;
+                    outline: 2px solid rgb(110, 110, 110);
+
+                    transition: all 150ms ease-in-out;
+                }
+                img:hover {
+                    background-color: hsl(0, 0%, 90%);
+                    box-shadow: 0px 0px 25px 0px rgba(255,255,255,1);
+                }
+            }
         }
         #container {
             display: grid;
@@ -13,35 +35,56 @@
 
             .div-book {
                 display: flex;
-                cursor: pointer;
                 padding: 2.4rem;
                 border-radius: .8rem;
                 position: relative;
                 bottom: 0;
 
-                transition: all 220ms ease;
+                transition: all 220ms ease-in-out;
                 img {
                     width: 30%;
                     border-radius: .5rem;
                 }
-                .info-book {
+
+                .align-items {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
-                    margin-left: 1.4rem;
-                    font-size: 1.4rem;
+                    margin-left: 2rem;
+                    justify-content: space-between;
+
+                    .title-book {
+                        font-size: 1.7rem;
+                    }
 
                     .writer-gender {
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
                         .writter-book {
+                            font-size: 1.5rem;
                             color: hsl(220, 100%, 80%);
                         }
                         p {
+                            font-size: 1.4rem;
                             font-weight: $font-semiBold;
                         }
                     }
+
+                    .btn-delete {
+                        border: none;
+                        padding: .5rem 1.5rem;
+                        background-color: rgba(40, 111, 255, .5);
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    .btn-delete:disabled {
+                        color: rgba(255, 255, 255, .7);
+                        background-color: rgba(40, 110, 255, .3);
+                        cursor: not-allowed;
+                    }
                 }
+
             }
             .div-book:hover {
                 background-color: rgba(40, 111, 255, .3);

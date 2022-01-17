@@ -8,10 +8,17 @@
         <link rel="icon" href="../assets/books-icon.png">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
+        <!--===SweetAlert===-->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
         <!--===jQuery===-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <script src="../js/find-book/books.data.js" defer></script>
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" defer/>
+
+        <script src="../js/Swal/alerts.data.js" defer></script>
         <script src="../js/find-book/functions.js" defer></script>
         <script src="../js/find-book/main.js" defer></script>
     </head>
@@ -37,11 +44,13 @@
 
         <main class="main_find-book">
             <section id="libros">
-                <h1>Nuestros libros disponibles</h1>
-
-                <div id="container" data-aos="fade-up" data-aos-duration="1500">
-                    <!--Los libros se imprimen de forma dinamica con JS-->
+                <div class="carrito-container">
+                    <h1>Libros:</h1>
+                    <a href="#modal" rel="modal:open"><img src="../assets/cart2.svg" alt="Carrito Icon"></a>
                 </div>
+
+                <div id="container"></div>
+
             </section>
         </main>
 
@@ -54,4 +63,18 @@
             AOS.init();
         </script>
     </body>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <h3>Libros en el carrito</h3>
+        <table>
+            <tbody id="carrito">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Precio</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </html>

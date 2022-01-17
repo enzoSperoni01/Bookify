@@ -2,7 +2,6 @@ const emailRecibido = {
     title: "Correo recibido!",
     text: "Tu email ha sido recibido con exito!",
     icon: "success",
-    confirmButtonText: "Listo!",
     timer: 3500,
     timerProgressBar: true,
     showConfirmButton: false
@@ -26,5 +25,13 @@ const emailRepetido = {
     timerProgressBar: true,
     toast: true,
     position: 'bottom-end',
+    showConfirmButton: false
+}
+const compraRealizada = {
+    title: "Realizado!",
+    text: "Tu compra se ha realizado con exito!",
+    icon: "success",
+    timer: 4000,
+    timerProgressBar: true,
     showConfirmButton: false
 }
