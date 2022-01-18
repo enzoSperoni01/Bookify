@@ -5,7 +5,7 @@
             "titulo": "Carrie",
             "autor": "Stephen King",
             "genero": "Terror",
-            "precio": 130,
+            "precio": 30.25,
             "img": "carrie"
         },
         {
@@ -13,7 +13,7 @@
             "titulo": "El Resplandor",
             "autor": "Stephen King",
             "genero": "Terror",
-            "precio": 150,
+            "precio": 35.30,
             "img": "elResplandor"
         },
         {
@@ -21,7 +21,7 @@
             "titulo": "El Señor de los Anillos:<br> La comunidad del anillo",
             "autor": "Tolkien",
             "genero": "Fantasia",
-            "precio": 230,
+            "precio": 55.79,
             "img": "elSeñorDeLosAnillos-I"
         },
         {
@@ -29,7 +29,7 @@
             "titulo": "El Señor de los Anillos:<br> Las dos torres",
             "autor": "Tolkien",
             "genero": "Fantasia",
-            "precio": 130,
+            "precio": 55.79,
             "img": "elSeñorDeLosAnillos-II"
         },
         {
@@ -37,7 +37,7 @@
             "titulo": "El Señor de los Anillos:<br> El retorno del rey",
             "autor": "Tolkien",
             "genero": "Fantasia",
-            "precio": 130,
+            "precio": 60.49,
             "img": "elSeñorDeLosAnillos-III"
         },
         {
@@ -45,7 +45,7 @@
             "titulo": "Astrofisica para gente apurada",
             "autor": "Neil deGrasse Tyson",
             "genero": "Divulgacion",
-            "precio": 130,
+            "precio": 40.45,
             "img": "astrofisica"
         },
         {
@@ -53,7 +53,7 @@
             "titulo": "Breve historia del Tiempo",
             "autor": "Stephen Hawking",
             "genero": "Divulgacion",
-            "precio": 130,
+            "precio": 45.30,
             "img": "breveHistoriaDelTiempo"
         },
         {
@@ -61,7 +61,7 @@
             "titulo": "¿Para que sirve la filosofia?",
             "autor": "Dario Sztajnszrajber",
             "genero": "Filosofia",
-            "precio": 130,
+            "precio": 25.49,
             "img": "paraQueSirveLaFilosofia"
         },
         {
@@ -69,7 +69,7 @@
             "titulo": "Filosofia en 11 frases",
             "autor": "Dario Sztajnszrajber",
             "genero": "Filosofia",
-            "precio": 130,
+            "precio": 30.23,
             "img": "filosofiaEn11frases"
         },
         {
@@ -77,7 +77,7 @@
             "titulo": "1984",
             "autor": "George Orwell",
             "genero": "Ciencia ficción",
-            "precio": 130,
+            "precio": 45.31,
             "img": "1984-img"
         },
         {
@@ -85,7 +85,7 @@
             "titulo": "Valle de la calma",
             "autor": "Dross",
             "genero": "Terror",
-            "precio": 130,
+            "precio": 35.88,
             "img": "valleDeLaCalma"
         },
         {
@@ -93,7 +93,7 @@
             "titulo": "Escape",
             "autor": "Dross",
             "genero": "Criminal",
-            "precio": 130,
+            "precio": 38.79,
             "img": "escapeDross"
         },
         {
@@ -101,7 +101,7 @@
             "titulo": "Historias de divan",
             "autor": "Gabriel Rolon",
             "genero": "Drama",
-            "precio": 130,
+            "precio": 33.45,
             "img": "historiasDeDivan"
         },
         {
@@ -109,7 +109,7 @@
             "titulo": "Historias inconscientes",
             "autor": "Gabriel Rolon",
             "genero": "Ficcion",
-            "precio": 130,
+            "precio": 36.49,
             "img": "historiasInconscientes"
         },
         {
@@ -117,7 +117,7 @@
             "titulo": "La voz ausente",
             "autor": "Gabriel Rolon",
             "genero": "Ficcion",
-            "precio": 130,
+            "precio": 50.79,
             "img": "laVozAusente"
         },
         {
@@ -125,7 +125,7 @@
             "titulo": "El Hobbit",
             "autor": "Tolkien",
             "genero": "Fantasia",
-            "precio": 130,
+            "precio": 40.35,
             "img": "elHobbit"
         },
         {
@@ -133,7 +133,7 @@
             "titulo": "Rebelión en la granja",
             "autor": "George Orwell",
             "genero": "Ficción",
-            "precio": 130,
+            "precio": 35.49,
             "img": "rebelionEnLaGranja"
         },
         {
@@ -141,7 +141,7 @@
             "titulo": "La Cupula",
             "autor": "Stephen King",
             "genero": "Ciencia ficcion",
-            "precio": 130,
+            "precio": 60.79,
             "img": "laCupula"
         },
         {
@@ -149,7 +149,7 @@
             "titulo": "Mr. Mercedes",
             "autor": "Stephen King",
             "genero": "Criminal",
-            "precio": 130,
+            "precio": 32.45,
             "img": "mrMercedes"
         },
         {
@@ -157,7 +157,7 @@
             "titulo": "Arsene Lupin",
             "autor": "Maurice Leblanc",
             "genero": "Ficcion",
-            "precio": 130,
+            "precio": 35.49,
             "img": "lupin"
         }
     ]
