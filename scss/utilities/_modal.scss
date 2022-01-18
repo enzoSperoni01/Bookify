@@ -7,15 +7,25 @@
 
     h3 {
         font-size: 1.7rem;
+        text-align: center;
     }
 
+    
     table {
         margin: 1.4rem .2rem 1.4rem .2rem;
         font-size: 1.4rem;
         width: 100%;
-
+        
+        th {
+            font-size: 1.6rem;
+            font-weight: $font-bold;
+            border-bottom: 2px solid white;
+        }
         #carrito {
             tr {
+                td {
+                    padding: 1rem 0;
+                }
                 .header {
                     color: black;
                     font-size: 1.5rem;
@@ -30,6 +40,7 @@
 
     button {
         font-size: 1.5rem;
+        font-weight: $font-bold;
         cursor: pointer;
         color: white;
         background-color: hsl(0, 100%, 65%);

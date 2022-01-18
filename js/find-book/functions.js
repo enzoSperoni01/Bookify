@@ -79,7 +79,7 @@ function imprimirCarrito(array) {
         <tr>
             <td>${libro.titulo}</td>
             <td class="header-price">$${libro.precio}</td>
-            <td><button id="${libro.id}" class="eliminar" onclick="eliminarLibro(event)">Eliminar</button></td>
+            <td><button id="${libro.id}" class="eliminar" onclick="eliminarLibro(event)">X</button></td>
         </tr>
         `);
 	});

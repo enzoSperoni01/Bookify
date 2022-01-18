@@ -47,11 +47,18 @@ html {
   color: whitesmoke;
   letter-spacing: .1rem; }
   .modal h3 {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    text-align: center; }
   .modal table {
     margin: 1.4rem .2rem 1.4rem .2rem;
     font-size: 1.4rem;
     width: 100%; }
+    .modal table th {
+      font-size: 1.6rem;
+      font-weight: 700;
+      border-bottom: 2px solid white; }
+    .modal table #carrito tr td {
+      padding: 1rem 0; }
     .modal table #carrito tr .header {
       color: black;
       font-size: 1.5rem;
@@ -60,6 +67,7 @@ html {
       font-weight: 600; }
   .modal button {
     font-size: 1.5rem;
+    font-weight: 700;
     cursor: pointer;
     color: white;
     background-color: #ff4d4d;
