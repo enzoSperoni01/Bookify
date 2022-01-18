@@ -6,7 +6,7 @@ let paginasLibro;
 // escritos en los input de "index.html"
 let listadoLibros = [];
 
-function botonListo() {
+const botonListo = () => {
     // Obtenemos el valor de cada input del "index.html"
     tituloLibro = $("#nombreLibro")[0].value;
     generoLibro = $("#generoLibro")[0].value;

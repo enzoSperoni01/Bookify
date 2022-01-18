@@ -1,10 +1,10 @@
 // Si el usuario pone una palabra en minuscula, la primera letra se pondra en mayuscula
-function capitalize(palabra) { 
+const capitalize = palabra => { 
     return palabra[0].toUpperCase() + palabra.slice(1);
 }
 
 // Ordena los elementos del objeto de menor a payor segun su cantidad de paginas
-function ordenarPaginas() {
+const ordenarPaginas = () => {
     listadoLibros.sort(function (a, b) {
         if (a.paginas > b.paginas) {
             return 1;
@@ -18,7 +18,7 @@ function ordenarPaginas() {
 }
 
 // Esta funcion imprimira los libros escritos por el Usuario
-function imprimirLibros() {
+const imprimirLibros = () => {
     let html = "";
 
     // La variable "i" se encargara de crear IDs distintos por cada <li>
@@ -41,7 +41,7 @@ Toma el id de cada <li> y con un parametro lo selecciona
 en el atributo onclick y agrega un boton con la funcionalidad
 de eliminar el ID que el usuario elija
 ********************************************************/
-function eliminarLibro(num) {
+const eliminarLibro = num => {
     let libroBorrar = $(`#libro-${num}`)[0];
     libroBorrar.remove();
     listadoLibros.splice(num, 1);

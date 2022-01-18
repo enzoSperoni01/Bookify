@@ -1,11 +1,11 @@
-function recibirLibros() {
+const recibirLibros = () => {
 	$.get("../js/find-book/libros.json", (respuesta, estado) => {
 		libros = respuesta.libros;
 		imprimirLibros(libros, true);
 	});
 }
 
-function imprimirLibros(array) {
+const imprimirLibros = array => {
 	$("#container").empty();
 
     array.forEach((book) => {
@@ -34,7 +34,7 @@ function imprimirLibros(array) {
 	});
 }
 
-function agregarAlCarrito(param) {
+const agregarAlCarrito = param => {
 	param.target.textContent = "En Carrito";
 	param.target.disabled = true;
 
@@ -47,7 +47,7 @@ function agregarAlCarrito(param) {
 	imprimirCarrito(carrito);
 }
 
-function eliminarLibro(param) {
+const eliminarLibro = param => {
 	let id = Number(param.target.id);
 	let index = carrito.findIndex((p) => p.id === id);
 
@@ -60,7 +60,7 @@ function eliminarLibro(param) {
 	imprimirLibros(libros, false);
 }
 
-function imprimirCarrito(array) {
+const imprimirCarrito = array => {
 	$("#carrito").empty();
 
 	let total = 0;

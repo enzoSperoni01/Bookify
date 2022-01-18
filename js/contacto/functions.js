@@ -1,5 +1,5 @@
 // Funcion que se encarga de trabajar los datos ingresados en los inputs 
-function enviarContacto() {
+const enviarContacto = () => {
     // Tomamos los datos de los Inputs y del textarea
     nombreApellido = $("#nombreApellido")[0].value;
     correoElectronico = $("#correoElectronico")[0].value;
