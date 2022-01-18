@@ -320,13 +320,17 @@ html {
         .main_find-book #libros #container .div-book .align-items .writer-gender p {
           font-size: 1.4rem;
           font-weight: 600; }
-      .main_find-book #libros #container .div-book .align-items .btn-delete {
+      .main_find-book #libros #container .div-book .align-items .btn-cart {
         border: none;
+        border-radius: .5rem;
+        width: 18rem;
         padding: .5rem 1.5rem;
-        background-color: rgba(40, 111, 255, 0.5);
+        background-color: rgba(40, 111, 255, 0.9);
         color: white;
-        cursor: pointer; }
-      .main_find-book #libros #container .div-book .align-items .btn-delete:disabled {
+        cursor: pointer;
+        transition: all .3s ease-in-out; }
+      .main_find-book #libros #container .div-book .align-items .btn-cart:disabled {
+        width: 12rem;
         color: rgba(255, 255, 255, 0.7);
         background-color: rgba(40, 110, 255, 0.3);
         cursor: not-allowed; }

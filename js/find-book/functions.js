@@ -31,7 +31,7 @@ function imprimirLibros(array, animacion) {
 						<p>${book.genero}</p>
 					</div>
 
-					<button id="${book.id}" class="btn-delete" ${ enCarrito ? "disabled" : null } onclick="agregarAlCarrito(event)">${ enCarrito ? "En carrito" : "Añadir al carrito" }</button>
+					<button id="${book.id}" class="btn-cart" ${ enCarrito ? "disabled" : null } onclick="agregarAlCarrito(event)">${ enCarrito ? "En carrito" : "Añadir al carrito" }</button>
 				</div>
 			</div>
             `)
