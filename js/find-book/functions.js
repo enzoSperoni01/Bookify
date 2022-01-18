@@ -5,15 +5,10 @@ function recibirLibros() {
 	});
 }
 
-function imprimirLibros(array, animacion) {
-    let fadeTime = animacion ? 800 : 0;
-    let delayTime = 50
-
+function imprimirLibros(array) {
 	$("#container").empty();
 
     array.forEach((book) => {
-        delayTime = animacion ? delayTime + 200 : 0;
-
 		let enCarrito = carrito.some(
 			(prodEnCarrito) => prodEnCarrito.id === book.id
 		);
@@ -35,9 +30,6 @@ function imprimirLibros(array, animacion) {
 				</div>
 			</div>
             `)
-				.hide()
-				.delay(delayTime)
-				.fadeIn(fadeTime)
 		);
 	});
 }
@@ -87,3 +79,21 @@ function imprimirCarrito(array) {
 	$("#carrito").append(`<span class="total">Total: $${total.toFixed(2)}`);
 	$("#carrito").append(`<button id="comprar-libros" class="comprarLibros">Comprar</button>`);
 }
+
+searchInput.addEventListener("keyup", (event) => {
+    const { value } = event.target;
+    
+    // El valor lo convertimos en minuscula
+    const searchQuery = value.toLowerCase();
+    
+    for (const nameElement of booksFromDOM) {
+        // El titulo tambien en minuscula
+        let title = nameElement.textContent.toLowerCase();
+
+        if (title.includes(searchQuery)) {
+            nameElement.style.display = "flex";
+        } else {
+            nameElement.style.display = "none";
+        }
+    }
+});
