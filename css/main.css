@@ -40,8 +40,12 @@ html {
   margin: 0;
   box-sizing: border-box; }
 
+#modal {
+  background-color: #2050df; }
+
 .modal {
-  color: black; }
+  color: whitesmoke;
+  letter-spacing: .1rem; }
   .modal h3 {
     font-size: 1.7rem; }
   .modal table {
@@ -72,7 +76,8 @@ html {
   .modal .total {
     display: block;
     margin-top: 1rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 1.5rem; }
   .modal .comprarLibros {
     background-color: #2bff00;
     font-weight: 700;

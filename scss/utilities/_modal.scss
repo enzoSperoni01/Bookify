@@ -1,5 +1,9 @@
+#modal {
+    background-color: hsl(225, 75%, 50%);
+}
 .modal {
-    color: black;
+    color: whitesmoke;
+    letter-spacing: .1rem;
 
     h3 {
         font-size: 1.7rem;
@@ -50,6 +54,7 @@
         display: block;
         margin-top: 1rem;
         font-weight: $font-bold;
+        margin-bottom: 1.5rem;
     }
 
     .comprarLibros {
