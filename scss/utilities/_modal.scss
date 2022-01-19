@@ -1,5 +1,6 @@
 #modal {
     background-color: hsl(225, 75%, 50%);
+    width: 100%;
 }
 .modal {
     color: whitesmoke;
@@ -8,6 +9,13 @@
     h3 {
         font-size: 1.7rem;
         text-align: center;
+    }
+
+    hr {
+        margin: .5rem 10rem;
+        border: 0; 
+        border-top: .2rem solid hsl(225, 40%, 65%);
+        border-radius: 1rem;
     }
 
     
@@ -19,16 +27,28 @@
         th {
             font-size: 1.6rem;
             font-weight: $font-bold;
-            border-bottom: 2px solid white;
         }
         #carrito {
             tr {
+                td:nth-child(2) {
+                    font-weight: $font-black;
+                    font-size: 1.25rem;
+                }
+
+                td:nth-child(1) {
+                    text-align: center;
+                }
                 td {
                     padding: 1rem 0;
+
+                    img {
+                        width: 3.4rem;
+                        margin-right: .5rem;
+                    }
                 }
                 .header {
                     color: black;
-                    font-size: 1.5rem;
+                    // font-size: 1.5rem;
                     font-weight: $font-semiBold;
                 }
                 .header-price {

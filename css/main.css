@@ -45,7 +45,8 @@ html {
   box-sizing: border-box; }
 
 #modal {
-  background-color: #2050df; }
+  background-color: #2050df;
+  width: 100%; }
 
 .modal {
   color: whitesmoke;
@@ -53,19 +54,30 @@ html {
   .modal h3 {
     font-size: 1.7rem;
     text-align: center; }
+  .modal hr {
+    margin: .5rem 10rem;
+    border: 0;
+    border-top: 0.2rem solid #8294c9;
+    border-radius: 1rem; }
   .modal table {
     margin: 1.4rem .2rem 1.4rem .2rem;
     font-size: 1.4rem;
     width: 100%; }
     .modal table th {
       font-size: 1.6rem;
-      font-weight: 700;
-      border-bottom: 2px solid white; }
+      font-weight: 700; }
+    .modal table #carrito tr td:nth-child(2) {
+      font-weight: 900;
+      font-size: 1.25rem; }
+    .modal table #carrito tr td:nth-child(1) {
+      text-align: center; }
     .modal table #carrito tr td {
       padding: 1rem 0; }
+      .modal table #carrito tr td img {
+        width: 3.4rem;
+        margin-right: .5rem; }
     .modal table #carrito tr .header {
       color: black;
-      font-size: 1.5rem;
       font-weight: 600; }
     .modal table #carrito tr .header-price {
       font-weight: 600; }

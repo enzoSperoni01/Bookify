@@ -71,6 +71,7 @@ const imprimirCarrito = array => {
 		total = total + libro.precio;
 		$("#carrito").append(`
         <tr>
+			<td><img src="../assets/img-books/${libro.img}.jpg" alt="${libro.titulo}" /></td>
             <td>${libro.titulo}</td>
             <td class="header-price">$${libro.precio}</td>
             <td><button id="${libro.id}" class="eliminar" onclick="eliminarLibro(event)">X</button></td>
