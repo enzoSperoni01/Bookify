@@ -1,5 +1,5 @@
 const recibirLibros = () => {
-	$.get("../js/find-book/libros.json", (respuesta, estado) => {
+	$.get("../js/e-commerce/libros.json", (respuesta, estado) => {
 		libros = respuesta.libros;
 		imprimirLibros(libros);
 	});
