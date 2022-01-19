@@ -35,6 +35,10 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #005fff; }
 
+::selection {
+  background-color: #264d73;
+  color: #fff; }
+
 * {
   padding: 0;
   margin: 0;

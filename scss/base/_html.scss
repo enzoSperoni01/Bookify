@@ -16,3 +16,7 @@ html {
 ::-webkit-scrollbar-thumb {
     background: rgba(0,95,255,1); 
 }
+::selection {
+    background-color: hsl(210, 50%, 30%);
+    color: #fff;
+}
