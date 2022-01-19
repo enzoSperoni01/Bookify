@@ -4,6 +4,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             #search {
                 display: flex;
                 flex-direction: column;
@@ -37,22 +38,38 @@
                     box-shadow: 0px 0px 20px 0px hsl(220, 100%, 60%);
                 }
             }
-            a {
-                img {
-                    width: 6rem;
-                    margin: 5rem 5rem 1rem 0;
-                    color: white;
-                    padding: 1.2rem;
-                    border-radius: .4rem;
-                    background-color: hsl(0, 0%, 75%);
-                    outline: 3px solid rgb(110, 110, 110);
+            .icon-button {
+                margin: 5rem 5rem 1rem 0;
+                color: white;
+                padding: 1.2rem 1.4rem;
+                border-radius: .4rem;
+                background-color: hsl(0, 0%, 75%);
+                outline: 3px solid rgb(110, 110, 110);
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                transition: all 150ms ease-in-out;
 
-                    transition: all 150ms ease-in-out;
+                img {
+                    width: 3.5rem;
                 }
-                img:hover {
-                    background-color: hsl(0, 0%, 100%);
-                    box-shadow: 0px 0px 25px 0px rgba(255,255,255,1);
+
+                .icon-button__badge {
+                    display: none;
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    background-color: hsl(0, 100%, 60%);
+                    border-radius: 50%;
                 }
+            }
+            .icon-button:hover {
+                background-color: hsl(0, 0%, 100%);
+                box-shadow: 0px 0px 25px 0px rgba(255,255,255,1);
             }
         }
         #container {

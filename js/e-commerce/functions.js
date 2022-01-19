@@ -89,8 +89,19 @@ const imprimirCarrito = array => {
 	`);
 
 	const btnComprar = document.getElementById("comprar-libros");
-	if(document.getElementById("carrito").hasChildNodes()) compraHecha(btnComprar);
-	else compraRepetida(btnComprar);
+	const childBooks = document.getElementById("carrito").hasChildNodes();
+
+	if(childBooks) {
+		compraHecha(btnComprar);
+		$("#notification")
+						.fadeIn(150)
+						.css({
+							"display": "block"
+						})
+	} else {
+		compraRepetida(btnComprar);
+		$("#notification").css({"display": "none"})
+	}
 }
 
 searchInput.addEventListener("keyup", (event) => {
