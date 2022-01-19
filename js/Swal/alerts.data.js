@@ -35,3 +35,11 @@ const compraRealizada = {
     timerProgressBar: true,
     showConfirmButton: false
 }
+const errorDeCompra = {
+    title: "No hay libros!",
+    text: "No podemos acreditar tu compra aún",
+    icon: "warning",
+    timer: 4000,
+    timerProgressBar: true,
+    showConfirmButton: false
+}

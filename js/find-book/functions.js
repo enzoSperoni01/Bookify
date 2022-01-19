@@ -79,14 +79,21 @@ const imprimirCarrito = array => {
 
 	});
 
-	$("#carrito").append(`<span class="total">Total: $${total.toFixed(2)}`);
-	$("#carrito").append(`<button id="comprar-libros" class="comprarLibros">Comprar</button>`);
+	$("#total").remove();
+	$("#reverse-elements").append(`
+				<div id="total">
+					<span class="total">Total: $${total.toFixed(2)}</span>
+					<button id="comprar-libros" class="comprarLibros">Comprar</button>
+				</div>
+	`);
 
+	const btnComprar = document.getElementById("comprar-libros");
+	if(document.getElementById("carrito").hasChildNodes()) compraHecha(btnComprar);
+	else compraRepetida(btnComprar);
 }
 
 searchInput.addEventListener("keyup", (event) => {
     const { value } = event.target;
-    
     // El valor lo convertimos en minuscula
     const searchQuery = value.toLowerCase();
     
@@ -101,3 +108,14 @@ searchInput.addEventListener("keyup", (event) => {
         }
     }
 });
+
+const compraHecha = elemento => {
+	elemento.addEventListener("click", () => {
+		Swal.fire(compraRealizada);
+	})
+}
+const compraRepetida = elemento => {
+	elemento.addEventListener("click", () => {
+		Swal.fire(errorDeCompra);
+	})
+}
