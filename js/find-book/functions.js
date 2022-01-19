@@ -1,14 +1,14 @@
 const recibirLibros = () => {
 	$.get("../js/find-book/libros.json", (respuesta, estado) => {
 		libros = respuesta.libros;
-		imprimirLibros(libros, true);
+		imprimirLibros(libros);
 	});
 }
 
 const imprimirLibros = array => {
 	$("#container").empty();
 
-    array.forEach((book) => {
+    array.forEach( book => {
 		let enCarrito = carrito.some(
 			(prodEnCarrito) => prodEnCarrito.id === book.id
 		);
@@ -39,17 +39,18 @@ const agregarAlCarrito = param => {
 	param.target.disabled = true;
 
 	let id = Number(param.target.id);
-	let libroSeleccionado = libros.find((p) => p.id === id);
+	let libroSeleccionado = libros.find( p => p.id === id);
 
 	carrito.push(libroSeleccionado);
 
 	localStorage.setItem("carrito-cliente", JSON.stringify(carrito));
+
 	imprimirCarrito(carrito);
 }
 
 const eliminarLibro = param => {
 	let id = Number(param.target.id);
-	let index = carrito.findIndex((p) => p.id === id);
+	let index = carrito.findIndex( p => p.id === id);
 
 	carrito.splice(index, 1);
 
@@ -57,7 +58,7 @@ const eliminarLibro = param => {
 
 	localStorage.setItem("carrito-cliente", JSON.stringify(carrito));
 
-	imprimirLibros(libros, false);
+	imprimirLibros(libros);
 }
 
 const imprimirCarrito = array => {
@@ -65,7 +66,8 @@ const imprimirCarrito = array => {
 
 	let total = 0;
 
-	array.forEach((libro) => {
+	array.forEach( libro => {
+
 		total = total + libro.precio;
 		$("#carrito").append(`
         <tr>
@@ -74,10 +76,12 @@ const imprimirCarrito = array => {
             <td><button id="${libro.id}" class="eliminar" onclick="eliminarLibro(event)">X</button></td>
         </tr>
         `);
+
 	});
 
 	$("#carrito").append(`<span class="total">Total: $${total.toFixed(2)}`);
 	$("#carrito").append(`<button id="comprar-libros" class="comprarLibros">Comprar</button>`);
+
 }
 
 searchInput.addEventListener("keyup", (event) => {

@@ -1,6 +1,7 @@
 $(() => {
 	recibirLibros();
 	imprimirLibros(carrito);
+	imprimirCarrito(carrito);
 });
 
 let carrito = JSON.parse(localStorage.getItem("carrito-cliente")) || [];
