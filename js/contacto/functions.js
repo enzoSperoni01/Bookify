@@ -28,7 +28,7 @@ const enviarContacto = () => {
                 boton.value = "Enviado!";
                 setTimeout(() => {
                     // Con este metodo podemos dirigir al usuario, como un link de HTML(<a href=""></a>), pero en JS
-                    window.location.href = "../pages/contactoHecho.html";
+                    window.location.href = "../pages/contactDone.html";
                 }, 2600);
             }, 3000);
         }, 500);
