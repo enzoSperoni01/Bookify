@@ -364,14 +364,14 @@ html {
         border-radius: .5rem;
         width: 18rem;
         padding: .5rem 1.5rem;
-        background-color: rgba(40, 111, 255, 0.9);
+        background-color: #286fff;
         color: white;
         cursor: pointer;
         transition: all .3s ease-in-out; }
       .main_find-book #libros #container .div-book .align-items .btn-cart:disabled {
         width: 12rem;
         color: rgba(255, 255, 255, 0.7);
-        background-color: rgba(40, 110, 255, 0.3);
+        background-color: rgba(50, 255, 40, 0.3);
         cursor: not-allowed; }
   .main_find-book #libros #container .div-book:hover {
     background-color: rgba(40, 111, 255, 0.3);
