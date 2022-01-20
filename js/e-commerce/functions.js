@@ -103,7 +103,7 @@ const imprimirCarrito = array => {
 	}
 }
 
-searchInput.addEventListener("keyup", (event) => {
+searchInput.addEventListener("keyup", event => {
     const { value } = event.target;
     // El valor lo convertimos en minuscula
     const searchQuery = value.toLowerCase();
@@ -127,7 +127,7 @@ const compraHecha = elemento => {
 
 		let long = carrito.length;
 		carrito.splice(0, long);
-		
+
 		imprimirCarrito(carrito);
 		localStorage.setItem("carrito-cliente", JSON.stringify(carrito));
 		imprimirLibros(libros);
@@ -138,3 +138,17 @@ const carritoVacio = elemento => {
 		Swal.fire(errorDeCompra);
 	})
 }
+const inputSearchIn = elemento => {
+	elemento.addEventListener("focusin", () => {
+		$("#searchInput").attr("placeholder", "Buscar por título, género o autor...");
+	})
+}
+const inputSearchOut = elemento => {
+	elemento.addEventListener("focusout", () => {
+		$("#searchInput").attr("placeholder", "Aquí para buscar tu libro");
+	})
+}
+
+let inputBuscar = $("#searchInput")[0];
+inputSearchIn(inputBuscar);
+inputSearchOut(inputBuscar);

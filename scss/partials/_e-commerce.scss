@@ -20,14 +20,19 @@
                     font-size: 1.2rem;
                     font-weight: $font-semiBold;
                     padding: 1.2rem 2rem;
-                    width: 35rem;
+                    border-radius: 2.5rem;
+                    letter-spacing: .1rem;
+                    width: 22rem;
                     border: none;
-                    border-radius: .3rem;
                     background-color: rgba(40, 111, 255, 1);
                     color: white;
                     outline: none;
+                    opacity: .5;
 
-                    transition: all .2s ease-out;
+                    transition: all .6s ease;
+                }
+                .search-bar:hover {
+                    cursor: pointer;
                 }
                 .search-bar::placeholder {
                     color: white;
@@ -35,6 +40,9 @@
                     letter-spacing: .1rem;
                 }
                 .search-bar:focus {
+                    width: 36rem;
+                    opacity: 1;
+                    cursor: text;
                     box-shadow: 0px 0px 20px 0px hsl(220, 100%, 60%);
                 }
             }

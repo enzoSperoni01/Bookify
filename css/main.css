@@ -320,18 +320,25 @@ html {
       font-size: 1.2rem;
       font-weight: 600;
       padding: 1.2rem 2rem;
-      width: 35rem;
+      border-radius: 2.5rem;
+      letter-spacing: .1rem;
+      width: 22rem;
       border: none;
-      border-radius: .3rem;
       background-color: #286fff;
       color: white;
       outline: none;
-      transition: all .2s ease-out; }
+      opacity: .5;
+      transition: all .6s ease; }
+    .main_find-book #libros .carrito-container #search .search-bar:hover {
+      cursor: pointer; }
     .main_find-book #libros .carrito-container #search .search-bar::placeholder {
       color: white;
       font-weight: 600;
       letter-spacing: .1rem; }
     .main_find-book #libros .carrito-container #search .search-bar:focus {
+      width: 36rem;
+      opacity: 1;
+      cursor: text;
       box-shadow: 0px 0px 20px 0px #3377ff; }
   .main_find-book #libros .carrito-container .icon-button {
     margin: 5rem 5rem 1rem 0;
