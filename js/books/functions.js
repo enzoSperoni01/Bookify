@@ -24,7 +24,7 @@ const imprimirLibros = () => {
     // La variable "i" se encargara de crear IDs distintos por cada <li>
     // Para que cada <li> sea unico y podamos operar con cada uno
     let i = 0;
-    listadoLibros.forEach(function(book) {
+    listadoLibros.forEach( book => {
         html += `<li id="libro-${i}" class="section__div__list__item" data-aos="fade-up" data-aos-duration="600">
                     Titulo: ${book.libro},<br>
                     Genero: ${book.genero},<br>
