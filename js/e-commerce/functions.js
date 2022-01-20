@@ -94,7 +94,6 @@ const imprimirCarrito = array => {
 	if(childBooks) {
 		compraHecha(btnComprar);
 		$("#notification")
-						.fadeIn(150)
 						.css({
 							"display": "block"
 						})

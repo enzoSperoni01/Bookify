@@ -339,7 +339,7 @@ html {
     padding: 1.2rem 1.4rem;
     border-radius: .4rem;
     background-color: #bfbfbf;
-    outline: 3px solid #6e6e6e;
+    outline: none;
     position: relative;
     display: flex;
     align-items: center;
@@ -350,15 +350,27 @@ html {
     .main_find-book #libros .carrito-container .icon-button .icon-button__badge {
       display: none;
       position: absolute;
-      top: -8px;
-      right: -8px;
-      width: 1.6rem;
-      height: 1.6rem;
-      background-color: #ff3333;
-      border-radius: 50%; }
+      top: -6px;
+      right: -6px;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #ff4d4d;
+      border-radius: 50%;
+      transition: all 150ms ease-in-out; }
   .main_find-book #libros .carrito-container .icon-button:hover {
     background-color: white;
-    box-shadow: 0px 0px 25px 0px white; }
+    box-shadow: 0px 0px 15px 0px white; }
+    .main_find-book #libros .carrito-container .icon-button:hover .icon-button__badge {
+      background-color: #ff1a1a;
+      animation: subir 400ms ease 1; }
+
+@keyframes subir {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-0.8rem); }
+  100% {
+    transform: translateY(0); } }
 
 .main_find-book #libros #container {
   display: grid;
