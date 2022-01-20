@@ -330,7 +330,8 @@ html {
       opacity: .5;
       transition: all .6s ease; }
     .main_find-book #libros .carrito-container #search .search-bar:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: .8; }
     .main_find-book #libros .carrito-container #search .search-bar::placeholder {
       color: white;
       font-weight: 600;
