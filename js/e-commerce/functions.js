@@ -98,7 +98,7 @@ const imprimirCarrito = array => {
 							"display": "block"
 						})
 	} else {
-		compraRepetida(btnComprar);
+		carritoVacio(btnComprar);
 		$("#notification").css({"display": "none"})
 	}
 }
@@ -125,7 +125,7 @@ const compraHecha = elemento => {
 		Swal.fire(compraRealizada);
 	})
 }
-const compraRepetida = elemento => {
+const carritoVacio = elemento => {
 	elemento.addEventListener("click", () => {
 		Swal.fire(errorDeCompra);
 	})
