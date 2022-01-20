@@ -123,6 +123,14 @@ searchInput.addEventListener("keyup", (event) => {
 const compraHecha = elemento => {
 	elemento.addEventListener("click", () => {
 		Swal.fire(compraRealizada);
+		$("#carrito").empty();
+
+		let long = carrito.length;
+		carrito.splice(0, long);
+		
+		imprimirCarrito(carrito);
+		localStorage.setItem("carrito-cliente", JSON.stringify(carrito));
+		imprimirLibros(libros);
 	})
 }
 const carritoVacio = elemento => {
