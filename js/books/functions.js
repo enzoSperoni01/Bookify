@@ -42,7 +42,8 @@ en el atributo onclick y agrega un boton con la funcionalidad
 de eliminar el ID que el usuario elija
 ********************************************************/
 const eliminarLibro = num => {
-    let libroBorrar = $(`#libro-${num}`)[0];
+    let libroBorrar = $(`#libro-${num}`);
     libroBorrar.remove();
     listadoLibros.splice(num, 1);
+    imprimirLibros();
 }
